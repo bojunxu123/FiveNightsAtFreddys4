@@ -2,6 +2,7 @@ package org.fivenightsatfreddys4;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.function.Consumer;
 
 public class Freddy extends Animatronic {
     private static final String NAME = "Freddy";
@@ -15,15 +16,9 @@ public class Freddy extends Animatronic {
         this.aggressionLevel = aggressionLevel;
     }
 
-    private FrameHandler frameHandler = new FrameHandler() {
-        @Override
-        public void onFrame(BufferedImage frame) {
-            // Hook this to your renderer; default is a no-op.
-        }
-    };
+    private Consumer<BufferedImage> frameHandler = frame -> {};
 
-
-    public void setFrameHandler(FrameHandler frameHandler) {
+    public void setFrameHandler(Consumer<BufferedImage> frameHandler) {
         this.frameHandler = frameHandler;
     }
 

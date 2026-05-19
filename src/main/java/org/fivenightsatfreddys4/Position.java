@@ -1,11 +1,6 @@
 package org.fivenightsatfreddys4;
 
-import java.util.Collections;
-import java.util.EnumMap;
-import java.util.LinkedHashSet;
-import java.util.Locale;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 public enum Position {
 	LIVING_ROOM_LEFT("living room left", 0, 0),

@@ -4,56 +4,54 @@ import javax.imageio.ImageIO;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.swing.Timer;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.function.Consumer;
 
 public class FramePlayer {
     private static final File JUMPSCARE_AUDIO = new File("src/main/resources/audio/scream2.wav");
 
-
     private FramePlayer() {
     }
 
-    public static void playAtFps(File folder, int fps, FrameHandler onFrame) {
-        ArrayList<File> frameFiles = loadFrames(folder);
-        if (frameFiles.isEmpty()) {
-            return;
-        }
+    /** Fire-and-forget overload. Returns immediately; frames play on the Swing EDT. */
+    public static void playAtFps(File folder, int fps, Consumer<BufferedImage> onFrame) {
+        playAtFps(folder, fps, onFrame, null);
+    }
 
-        ArrayList<BufferedImage> frames = loadImages(frameFiles);
+    /**
+     * Plays frames from {@code folder} at {@code fps} using a Swing Timer.
+     * Returns immediately. {@code onComplete} (if non-null) is called on the EDT
+     * after the last frame has been shown.
+     */
+    public static void playAtFps(File folder, int fps, Consumer<BufferedImage> onFrame, Runnable onComplete) {
+        ArrayList<BufferedImage> frames = loadImages(loadFrames(folder));
         if (frames.isEmpty()) {
             return;
         }
 
         playJumpscareAudio();
 
-        long frameDelayNanos = 1_000_000_000L / fps;
-        long nextFrameTime = System.nanoTime();
+        int delayMs = 1000 / fps;
+        int[] index = {0};
 
-        for (int i = 0; i < frames.size(); i++) {
-            BufferedImage frame = frames.get(i);
-
-            if (frame != null) {
-                onFrame.onFrame(frame);
-            }
-
-            if (i < frames.size() - 1) {
-                nextFrameTime = nextFrameTime + frameDelayNanos;
-                while (System.nanoTime() < nextFrameTime) {
-                    if (Thread.currentThread().isInterrupted()) {
-                        return;
-                    }
-                    Thread.yield();
-                }
-
-                if (Thread.currentThread().isInterrupted()) {
-                    return;
+        Timer timer = new Timer(delayMs, null);
+        timer.addActionListener(e -> {
+            onFrame.accept(frames.get(index[0]));
+            index[0]++;
+            if (index[0] >= frames.size()) {
+                timer.stop();
+                if (onComplete != null) {
+                    onComplete.run();
                 }
             }
-        }
+        });
+        timer.setInitialDelay(0);
+        timer.start();
     }
 
     private static ArrayList<BufferedImage> loadImages(ArrayList<File> frameFiles) {

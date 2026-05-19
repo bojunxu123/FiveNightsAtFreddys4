@@ -2,18 +2,15 @@ package org.fivenightsatfreddys4;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.function.Consumer;
 
 public class Fredbear extends Animatronic {
     private static final String NAME = "Fredbear";
     private static final File JUMPSCARE_FRAMES = new File("src/main/resources/Fredbear/Jumpscare");
-    private FrameHandler frameHandler = new FrameHandler() {
-        @Override
-        public void onFrame(BufferedImage frame) {
-            // Hook this to your renderer; default is a no-op.
-        }
-    };
 
-    public void setFrameHandler(FrameHandler frameHandler) {
+    private Consumer<BufferedImage> frameHandler = frame -> {};
+
+    public void setFrameHandler(Consumer<BufferedImage> frameHandler) {
         this.frameHandler = frameHandler;
     }
 

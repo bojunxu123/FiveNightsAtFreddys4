@@ -2,18 +2,14 @@ package org.fivenightsatfreddys4;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.function.Consumer;
 
 public class Bonnie extends Animatronic {
     private static final String NAME = "Bonnie";
     private static final File JUMPSCARE_DOOR_FRAMES = new File("src/main/resources/Bonnie/Jumpscare/Door");
     private static final File JUMPSCARE_IN_ROOM_FRAMES = new File("src/main/resources/Bonnie/Jumpscare/InRoom");
 
-    private FrameHandler frameHandler = new FrameHandler() {
-        @Override
-        public void onFrame(BufferedImage frame) {
-            // Hook this to your renderer; default is a no-op.
-        }
-    };
+    private Consumer<BufferedImage> frameHandler = frame -> {};
 
     public Bonnie(Position startingPos) {
         this.name = NAME;
@@ -27,7 +23,7 @@ public class Bonnie extends Animatronic {
         this.aggressionLevel = aggressionLevel;
     }
 
-    public void setFrameHandler(FrameHandler frameHandler) {
+    public void setFrameHandler(Consumer<BufferedImage> frameHandler) {
         this.frameHandler = frameHandler;
     }
 
