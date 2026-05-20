@@ -23,6 +23,6 @@ public abstract class Animatronic {
     }
 
 
-    public abstract boolean movementOpportunity();
+    public abstract boolean movementOpportunity(Player p);
     
 }

@@ -10,9 +10,13 @@ public class Freddy extends Animatronic {
         this.aggressionLevel = aggressionLevel;
     }
 
-    public boolean movementOpportunity() {
-        currentProgress += aggressionLevel;
-        return true;
+    public boolean movementOpportunity(Player p) {
+        if (!p.getPos().equals(Position.BED)) { //if player isn't watching the bed
+            currentProgress += aggressionLevel; //get more aggressive
+            return true;
+        } else {
+            return false; //if the player is watching do nothing
+        }
     }
 
     public void jumpscareInRoom() {
