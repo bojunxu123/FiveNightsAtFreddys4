@@ -1,7 +1,10 @@
 package org.fivenightsatfreddys4;
 
 public class Chica extends Animatronic {
-    public boolean movementOpportunity() {
-        return true;
+
+
+    @Override
+    public boolean movementOpportunity(Player p) {
+        return false;
     }
 }
