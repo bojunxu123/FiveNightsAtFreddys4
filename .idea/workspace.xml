@@ -9,56 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="hi">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/379.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/380.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/381.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/382.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/383.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/384.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/385.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/386.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/387.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/388.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/389.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/390.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/391.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/392.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/393.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/394.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/396.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/397.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/398.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/399.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/402.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/424.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/425.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/452.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/489.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/491.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/492.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/493.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/494.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/806.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/807.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Freddy/808.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/103.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayPeak/99.png" beforeDir="false" />
-    </list>
+    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="organized freddy files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -328,7 +279,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779236332258</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="organized freddy files">
+      <option name="closed" value="true" />
+      <created>1779651261379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779651261379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="organized freddy files">
+      <option name="closed" value="true" />
+      <created>1779651518517</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779651518517</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +315,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jdfjlkg" />
     <MESSAGE value="hi" />
-    <option name="LAST_COMMIT_MESSAGE" value="hi" />
+    <MESSAGE value="organized freddy files" />
+    <option name="LAST_COMMIT_MESSAGE" value="organized freddy files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
