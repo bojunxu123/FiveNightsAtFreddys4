@@ -19,7 +19,7 @@ public class Player {
         rightDoorClosed = false;
     }
 
-    public void move(Position p) {
+    public void move(Position p, Position pos) {
 
     }
 
