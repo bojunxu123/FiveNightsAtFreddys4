@@ -295,7 +295,31 @@
       <option name="project" value="LOCAL" />
       <updated>1779651518517</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="organized freddy files">
+      <option name="closed" value="true" />
+      <created>1779651590328</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1779651590328</updated>
+    </task>
+    <task id="LOCAL-00008" summary="organized freddy files">
+      <option name="closed" value="true" />
+      <created>1779653070620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1779653070620</updated>
+    </task>
+    <task id="LOCAL-00009" summary="organized freddy files">
+      <option name="closed" value="true" />
+      <created>1779653077702</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1779653077702</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
