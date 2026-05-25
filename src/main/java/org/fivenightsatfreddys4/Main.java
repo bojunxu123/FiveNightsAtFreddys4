@@ -4,7 +4,9 @@
  */
 package org.fivenightsatfreddys4;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.io.IOException;
 
 /**
  *
@@ -12,13 +14,13 @@ import javax.swing.*;
  */
 public class Main extends javax.swing.JFrame {
 
-    public Main() {
+    public Main() throws IOException {
         initComponents();
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents() throws IOException {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1024, 768));
@@ -34,6 +36,9 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
+        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/15.png")));
+        this.setContentPane(new JLabel(viewport));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -45,19 +50,17 @@ public class Main extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main().setVisible(true);
+                try {
+                    new Main().setVisible(true);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
     }
