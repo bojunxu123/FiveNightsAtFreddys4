@@ -7,6 +7,8 @@ package org.fivenightsatfreddys4;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  *
@@ -16,6 +18,7 @@ public class Main extends javax.swing.JFrame {
 
     public Main() throws IOException {
         initComponents();
+        setResizable(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -36,8 +39,17 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/15.png")));
-        this.setContentPane(new JLabel(viewport));
+        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/627.png")));
+        JLabel screen = new JLabel(viewport);
+        FramePlayer.link(screen);
+        this.setContentPane(screen);
+
+        FrameSequence test = new FrameSequence("foxy/jumpscare");
+        FramePlayer.playClip(test);
+
+        Audio jumpscare = new Audio("scream2.wav");
+        jumpscare.play();
+
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -58,11 +70,20 @@ public class Main extends javax.swing.JFrame {
             public void run() {
                 try {
                     new Main().setVisible(true);
+                    Timer renderTimer = new Timer();
+                    TimerTask render = new TimerTask() {
+                        @Override
+                        public void run() {
+                            FramePlayer.tick();
+                        }
+                    };
+                    renderTimer.scheduleAtFixedRate(render,0,41);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             }
         });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

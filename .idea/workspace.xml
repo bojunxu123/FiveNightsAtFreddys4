@@ -10,189 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="organized and cleaned up a bunch of files">
+      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Audio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/122.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/227.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/303.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/320.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/359.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/369.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/423.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/514.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/593.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/979.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/653.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/887.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/888.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/889.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/890.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/891.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/amLabel/892.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/103.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallway/99.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/roomJumpscare/377.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/roomJumpscare/568.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/roomJumpscare/595.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/191.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/193.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/194.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/195.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/196.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/197.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/198.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/201.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/202.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/206.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/207.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/208.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/209.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/210.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/211.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/213.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/260.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallway/262.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/atCloset/419.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/closeCloset/435.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/closeCloset/436.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/closeCloset/438.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/closeCloset/440.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/closeCloset/442.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/emptyCloset/361.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/fullCloset/291.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/271.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/271.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/346.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/155.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/158.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/159.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/273.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/275.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/276.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/277.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/279.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/281.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/284.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/leftHallway/286.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/middleCloset/287.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/nearCloset/289.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/105.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/119.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/rightHallway/149.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/spookCloset/633.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/spookCloset/645.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/startCloset/305.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/396.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/397.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/399.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/424.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/425.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/452.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/489.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/491.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/492.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/1/494.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/380.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/381.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/384.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/385.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/386.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/387.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/389.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/398.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/399.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/2/402.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/378.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/379.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/382.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/383.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/390.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/391.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/392.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/3/394.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goLeft/New folder/106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goLeft/New folder/107.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goLeft/New folder/145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaveRight/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaveRight/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leftDoor/89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loadScreen/nightLabel/671.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loadScreen/nightLabel/687.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loadScreen/nightLabel/688.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loadScreen/nightLabel/689.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loadScreen/nightLabel/690.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loadScreen/nightLabel/691.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/732.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/732.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/733.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/733.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/738.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/740.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/741.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/742.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/743.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/744.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/745.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/746.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/747.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/748.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/750.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/926.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainMenu/963.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/263.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/363.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/364.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/365.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/366.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/367.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/368.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/370.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/371.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/372.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/373.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/374.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rightDoor/376.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FramePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FramePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Sound.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +26,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="d9c5576a-ea09-459f-a8e3-54575960bdf6" />
+        <option name="activeSessionId" value="a4b1ecb2-549e-47c3-aa16-9ee59045f6ad" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -304,6 +128,14 @@
             <option name="status" value="Completed" />
             <option name="targetType" value="LOCAL" />
           </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="a4b1ecb2-549e-47c3-aa16-9ee59045f6ad" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
         </option>
         <option name="type" value="PANEL" />
       </chat>
@@ -328,6 +160,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -365,6 +200,10 @@
     &quot;accountId&quot;: &quot;f5a7427a-1bc3-4cdf-8b6e-102e2ab8e8d7&quot;
   }
 }</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
   &quot;fromUser&quot;: false

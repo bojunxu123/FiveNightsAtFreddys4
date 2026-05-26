@@ -1,5 +1,40 @@
 package org.fivenightsatfreddys4;
 
+import javax.swing.*;
+
 public class FramePlayer {
+
+    private static boolean playing;
+    private static FrameSequence current;
+    private static int frame;
+    private static JLabel viewport;
+
+    public static void link(JLabel screen) {
+        viewport = screen;
+    }
+
+    public static void tick() {
+        if (current == null) return;
+        // 24 fps
+        frame++;
+        if (frame == current.size) {
+            playing = false;
+            current = null;
+            frame = 0;
+        }
+        else {
+            viewport.setIcon(new ImageIcon(current.frames[frame]));
+        }
+
+    }
+
+    public static void playClip(FrameSequence toPlay) {
+        frame = 0;
+        playing = true;
+        current = toPlay;
+
+
+    }
+
 
 }
