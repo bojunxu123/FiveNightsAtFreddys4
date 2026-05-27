@@ -5,8 +5,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class FrameSequence {
 
@@ -19,8 +17,6 @@ public class FrameSequence {
         URL url = getClass().getResource("/" + path);
         File root = new File(url.getPath());
         File[] frameFiles = root.listFiles();
-
-
 
         size = frameFiles.length;
         frames = new BufferedImage[size];
@@ -45,6 +41,10 @@ public class FrameSequence {
 
     public FrameSequence(String path) {
         this(path,false);
+    }
+
+    public BufferedImage getFrame(int i) {
+        return frames[i];
     }
 
 }

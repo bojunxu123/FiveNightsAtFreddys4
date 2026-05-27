@@ -1,23 +1,10 @@
 package org.fivenightsatfreddys4;
 
 public class Bonnie extends Animatronic {
-    private static final String NAME = "Bonnie";
-    private static final Position[] locations = {
-            Position.LIVING_ROOM_CENTER,
-            Position.LIVING_ROOM_LEFT,
-            Position.LEFT_HALLWAY,
-            Position.LEFT_DOOR
-    };
 
-    public Bonnie() {
-        this.name = NAME;
-        this.aggressionLevel = 0;
-        this.currentPos = locations[0];
-    }
-
-    public Bonnie(int a) {
-        this();
-        this.aggressionLevel = a;
+    public Bonnie( int aggression) {
+        this.aggressionLevel = aggression;
+        this.currentPos = Position.LIVING_ROOM_CENTER;
     }
 
     public boolean movementOpportunity(Player p) {

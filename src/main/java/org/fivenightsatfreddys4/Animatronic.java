@@ -1,7 +1,7 @@
 package org.fivenightsatfreddys4;
 
 public abstract class Animatronic {
-    protected String name;
+
     protected int aggressionLevel;
     protected Position currentPos;
 
@@ -17,11 +17,6 @@ public abstract class Animatronic {
     public Position getCurrentPos(){
         return currentPos;
     }
-
-    public void increaseAggression() {
-        aggressionLevel++;
-    }
-
 
     public abstract boolean movementOpportunity(Player p);
     

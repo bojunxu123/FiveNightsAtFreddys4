@@ -23,7 +23,7 @@ public class FramePlayer {
             frame = 0;
         }
         else {
-            viewport.setIcon(new ImageIcon(current.frames[frame]));
+            viewport.setIcon(new ImageIcon(current.getFrame(frame)));
         }
 
     }
