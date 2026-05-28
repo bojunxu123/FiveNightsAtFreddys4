@@ -9,71 +9,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="finished on audio and video streaming">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/warning/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/warning/627.png" afterDir="false" />
+    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="worded on tyjingts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FramePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FramePlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameTimedSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameTimedSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Freddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Freddy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/400.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/400.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/404.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/406.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/406.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/408.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/408.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/409.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/409.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/410.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/410.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/411.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/411.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/412.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/412.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/413.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/413.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/414.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/414.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/415.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/415.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/416.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/416.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/418.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/418.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/52.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/52.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/53.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/53.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/54.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/54.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/55.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/55.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/56.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/56.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/57.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/57.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/58.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/58.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/59.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/59.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/60.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/61.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/61.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/62.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/62.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/63.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/63.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/64.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/65.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/65.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/66.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/66.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/67.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/67.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/68.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/68.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/69.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/69.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/70.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/70.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/71.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/71.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/72.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/73.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/73.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/74.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/74.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/75.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/75.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/76.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/76.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/77.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/77.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/78.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/78.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/79.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/79.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/80.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/80.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/goCloset/81.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkCloset/81.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRoom/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRoom/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRoom/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRoom/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/101.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/101.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/102.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/102.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/103.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/103.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/104.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/104.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/106.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/106.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/155.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/155.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/158.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/158.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/159.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/159.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/97.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/97.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/98.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/98.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/99.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/99.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/999.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/999.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/193.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/193.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/194.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/194.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/195.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/195.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/196.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/196.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/197.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/197.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/198.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/198.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/199.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/199.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/200.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/200.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/201.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/201.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/202.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/202.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/206.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/206.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/207.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/207.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/208.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/208.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/209.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/209.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/210.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/210.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/211.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/211.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/213.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/213.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/263.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/263.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +60,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="730f1f07-ed0f-42cf-a47c-5ed21e4dfa0a" />
+        <option name="activeSessionId" value="506533bf-9655-4b1b-8ca2-e36b4c57a8a2" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -199,6 +176,24 @@
             <option name="modeId" value="Ask" />
             <option name="modelType" value="builtin_family" />
             <option name="modelValue" value="auto" />
+            <option name="status" value="Completed" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="9a6cc7d7-849f-496d-af00-ed6f08390d37" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="506533bf-9655-4b1b-8ca2-e36b4c57a8a2" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="status" value="Completed" />
             <option name="targetType" value="LOCAL" />
           </session>
         </option>
@@ -214,8 +209,8 @@
   </component>
   <component name="CopilotUserSelectedModel">
     <selectedModels>
-      <entry key="agent-panel" value="Claude Sonnet 4.6" />
-      <entry key="chat-panel" value="Claude Sonnet 4.6" />
+      <entry key="agent-panel" value="Auto" />
+      <entry key="chat-panel" value="Auto" />
     </selectedModels>
   </component>
   <component name="ExternalProjectsData">
@@ -281,11 +276,11 @@
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
-        <option name="modeId" value="Agent" />
+        <option name="modeId" value="Ask" />
         <option name="model">
           <model>
             <option name="modelType" value="builtin_family" />
-            <option name="modelValue" value="claude-sonnet-4.6" />
+            <option name="modelValue" value="auto" />
           </model>
         </option>
         <option name="targetType" value="LOCAL" />
@@ -459,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779894082783</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="worded on tyjingts">
+      <option name="closed" value="true" />
+      <created>1779981510507</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1779981510507</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +485,8 @@
     <MESSAGE value="organized freddy files" />
     <MESSAGE value="organized and cleaned up a bunch of files" />
     <MESSAGE value="finished on audio and video streaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished on audio and video streaming" />
+    <MESSAGE value="worded on tyjingts" />
+    <option name="LAST_COMMIT_MESSAGE" value="worded on tyjingts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,6 +6,7 @@ package org.fivenightsatfreddys4;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -15,6 +16,12 @@ import java.util.TimerTask;
  * @author bojunxu
  */
 public class Main extends javax.swing.JFrame {
+
+    public final static int renderInterval = 41;
+
+    public final static Timer timer = new Timer();
+
+    private JButton newGame;
 
     public Main() throws IOException {
         initComponents();
@@ -44,8 +51,18 @@ public class Main extends javax.swing.JFrame {
         FramePlayer.link(screen);
         this.setContentPane(screen);
 
-        FrameSequences.introWarning.getFrame(0);
+        FrameSequences.introWarning.play();
+        timer.schedule(showButtons,FrameSequences.introWarning.getLength());
 
+        newGame = new JButton("New Game", new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/731.png"))));
+        newGame.setBounds(433,360,168,22);
+        newGame.setVisible(true);
+        newGame.setContentAreaFilled(false);
+        newGame.setFocusPainted(false);
+        newGame.setOpaque(false);
+        newGame.setBorderPainted(false);
+        newGame.setBackground(Color.black);
+        getContentPane().add(newGame);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -66,14 +83,13 @@ public class Main extends javax.swing.JFrame {
             public void run() {
                 try {
                     new Main().setVisible(true);
-                    Timer renderTimer = new Timer();
                     TimerTask render = new TimerTask() {
                         @Override
                         public void run() {
                             FramePlayer.tick();
                         }
                     };
-                    renderTimer.scheduleAtFixedRate(render,0,41);
+                    timer.scheduleAtFixedRate(render,0,renderInterval);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -81,6 +97,13 @@ public class Main extends javax.swing.JFrame {
         });
 
     }
+
+    private final TimerTask showButtons = new TimerTask() {
+        @Override
+        public void run() {
+            newGame.setVisible(true);
+        }
+    };
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

@@ -12,7 +12,6 @@ public class FrameSequence implements Playable {
     public int size;
 
     public FrameSequence(String path, boolean reversed) {
-
         URL url = getClass().getResource("/" + path);
         File root = new File(url.getPath());
         File[] frameFiles = root.listFiles();
@@ -48,5 +47,9 @@ public class FrameSequence implements Playable {
     @Override
     public void play() {
         FramePlayer.playClip(this);
+    }
+
+    public int getLength() {
+        return Main.renderInterval * size;
     }
 }

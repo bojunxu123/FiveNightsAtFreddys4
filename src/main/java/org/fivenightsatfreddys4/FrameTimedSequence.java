@@ -17,4 +17,9 @@ public class FrameTimedSequence extends FrameSequence {
     public BufferedImage getFrame(int i) {
         return frames[i/framesPerFrame];
     }
+
+    @Override
+    public int getLength() {
+        return Main.renderInterval * size * framesPerFrame;
+    }
 }
