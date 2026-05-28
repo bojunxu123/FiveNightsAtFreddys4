@@ -39,16 +39,12 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/627.png")));
+        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/1.png")));
         JLabel screen = new JLabel(viewport);
         FramePlayer.link(screen);
         this.setContentPane(screen);
 
-        FrameSequence test = new FrameSequence("foxy/jumpscare");
-        FramePlayer.playClip(test);
-
-        Audio jumpscare = new Audio("scream2.wav");
-        jumpscare.play();
+        FrameSequences.introWarning.getFrame(0);
 
 
         pack();

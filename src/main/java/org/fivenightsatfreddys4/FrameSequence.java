@@ -6,11 +6,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-public class FrameSequence {
+public class FrameSequence implements Playable {
 
     public BufferedImage[] frames;
     public int size;
-    public boolean reversed;
 
     public FrameSequence(String path, boolean reversed) {
 
@@ -20,7 +19,6 @@ public class FrameSequence {
 
         size = frameFiles.length;
         frames = new BufferedImage[size];
-        this.reversed = reversed;
 
         try {
             if (reversed) {
@@ -47,4 +45,8 @@ public class FrameSequence {
         return frames[i];
     }
 
+    @Override
+    public void play() {
+        FramePlayer.playClip(this);
+    }
 }

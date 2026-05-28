@@ -1,6 +1,7 @@
 package org.fivenightsatfreddys4;
 
 import java.awt.image.BufferedImage;
+import java.util.Arrays;
 
 public class FrameTimedSequence extends FrameSequence {
 

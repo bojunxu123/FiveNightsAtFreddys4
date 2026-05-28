@@ -5,7 +5,6 @@ public class Freddy extends Animatronic {
     private int currentProgress;
 
     public Freddy(int aggressionLevel) {
-        this.name = NAME;
         currentPos = Position.BED;
         this.aggressionLevel = aggressionLevel;
     }

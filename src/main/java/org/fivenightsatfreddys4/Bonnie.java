@@ -3,18 +3,19 @@ package org.fivenightsatfreddys4;
 public class Bonnie extends Animatronic {
 
     public Bonnie( int aggression) {
-        this.aggressionLevel = aggression;
-        this.currentPos = Position.LIVING_ROOM_CENTER;
+        aggressionLevel = aggression;
+        currentPos = Position.LIVING_ROOM_CENTER;
+        jumpscare = new FrameSequence("bonnie/jumpscare");
     }
 
     public boolean movementOpportunity(Player p) {
         // player is at the left door while Bonnie is in the hall or at the door he can't advance
         if (p.getPos() == Position.LEFT_DOOR && (currentPos == Position.LEFT_HALLWAY || currentPos == Position.LEFT_DOOR)) {
             return false;
-        } else if (p.isLeftDoorClosed() && currentPos == Position.LEFT_DOOR) {
+        } else if (p.isDoorClosed(Position.LEFT_DOOR) && currentPos == Position.LEFT_DOOR) {
             currentPos = Position.LIVING_ROOM_LEFT;
             return true;
-        } else if (p.isLeftDoorClosed() && currentPos == Position.LEFT_HALLWAY) {
+        } else if (p.isDoorClosed(Position.LEFT_DOOR) && currentPos == Position.LEFT_HALLWAY) {
             currentPos = Position.LEFT_DOOR;
             return true;
         } else {

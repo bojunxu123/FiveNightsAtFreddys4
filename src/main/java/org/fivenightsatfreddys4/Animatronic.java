@@ -4,6 +4,7 @@ public abstract class Animatronic {
 
     protected int aggressionLevel;
     protected Position currentPos;
+    protected FrameSequence jumpscare;
 
     public void setAggressionLevel(int a){
         aggressionLevel=a;
