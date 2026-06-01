@@ -21,6 +21,55 @@ public class FrameSequences{
 
     public static final FrameSequence introWarning = new FrameTimedSequence("mainMenu/warning", 16);
     public static void showLeftDoor() {
+        if (Main.foxy.currentPos == Position.LEFT_HALLWAY) {
+            leftFoxy.play();
+        }
+        else if (Main.bonnie.currentPos == Position.LEFT_HALLWAY) {
+            leftBonnie.play();
+        }
+        else if (Main.freddy.currentPos == Position.LEFT_HALLWAY) {
+            leftFredbear.play();
+        }
+        else {
+            leftEmpty.play();
+        }
+    }
 
+    public static void showRightDoor() {
+        if (Main.foxy.currentPos == Position.RIGHT_HALLWAY) {
+            rightFoxy.play();
+        }
+        else if (Main.chica.currentPos == Position.RIGHT_HALLWAY) {
+            rightChica.play();
+        }
+        else if (Main.freddy.currentPos == Position.RIGHT_HALLWAY) {
+            rightFredbear.play();
+        }
+        else {
+            rightEmpty.play();
+        }
+    }
+
+    public static void showCloset() {
+        if (Main.fredbear.currentPos == Position.CLOSET) {
+            closetFredbear.play();
+        }
+        else if (Main.foxy.currentPos == Position.CLOSET) {
+            if (Main.foxy.progress < 2) {
+                closetFoxy1.play();
+            }
+            else if (Main.foxy.progress < 4) {
+                closetFoxy2.play();
+            }
+            else if (Main.foxy.progress < 6) {
+                closetFoxy3.play();
+            }
+            else {
+                closetFoxy4.play();
+            }
+        }
+        else {
+            closetEmpty.play();
+        }
     }
 }

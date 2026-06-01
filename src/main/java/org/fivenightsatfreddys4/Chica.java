@@ -4,7 +4,7 @@ public class Chica extends Animatronic {
 
 
     @Override
-    public boolean movementOpportunity(Player p) {
-        return false;
+    public void movementOpportunity() {
+
     }
 }

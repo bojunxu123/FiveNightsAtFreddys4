@@ -8,18 +8,18 @@ public class Bonnie extends Animatronic {
         jumpscare = new FrameSequence("bonnie/jumpscare");
     }
 
-    public boolean movementOpportunity(Player p) {
+    public void movementOpportunity() {
         // player is at the left door while Bonnie is in the hall or at the door he can't advance
         if (p.getPos() == Position.LEFT_DOOR && (currentPos == Position.LEFT_HALLWAY || currentPos == Position.LEFT_DOOR)) {
-            return false;
+            return;
         } else if (p.isDoorClosed(Position.LEFT_DOOR) && currentPos == Position.LEFT_DOOR) {
             currentPos = Position.LIVING_ROOM_LEFT;
-            return true;
+            return;
         } else if (p.isDoorClosed(Position.LEFT_DOOR) && currentPos == Position.LEFT_HALLWAY) {
             currentPos = Position.LEFT_DOOR;
-            return true;
+            return;
         } else {
-            return true;
+            return;
         }
         // if player shuts door on him while he's at the door, set pos to LIVING_ROOM_LEFT on the next interval, return true
     }

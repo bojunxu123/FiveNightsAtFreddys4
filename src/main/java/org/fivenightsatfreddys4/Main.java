@@ -21,6 +21,18 @@ public class Main extends javax.swing.JFrame {
 
     public final static Timer timer = new Timer();
 
+    public static Bonnie bonnie;
+
+    public static Chica chica;
+
+    public static Freddy freddy;
+
+    public static Foxy foxy;
+
+    public static Fredbear fredbear;
+
+    public static int hour;
+
     private JButton newGame;
 
     public Main() throws IOException {
@@ -29,7 +41,6 @@ public class Main extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() throws IOException {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,19 +64,19 @@ public class Main extends javax.swing.JFrame {
 
         FrameSequences.introWarning.play();
         timer.schedule(showButtons,FrameSequences.introWarning.getLength());
+        System.out.println(FrameSequences.introWarning.getLength());
 
         newGame = new JButton("New Game", new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/731.png"))));
         newGame.setBounds(433,360,168,22);
-        newGame.setVisible(true);
+        newGame.setVisible(false);
         newGame.setContentAreaFilled(false);
         newGame.setFocusPainted(false);
         newGame.setOpaque(false);
         newGame.setBorderPainted(false);
-        newGame.setBackground(Color.black);
         getContentPane().add(newGame);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     public static void main(String args[]) {
         try {
@@ -102,9 +113,9 @@ public class Main extends javax.swing.JFrame {
         @Override
         public void run() {
             newGame.setVisible(true);
+            System.out.println("I show u new game");
         }
     };
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    // End of variables declaration//GEN-END:variables
+
 }

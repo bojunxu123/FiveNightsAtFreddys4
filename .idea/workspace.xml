@@ -9,48 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="worded on tyjingts">
+    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="began adding the main menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Nights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/warning/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/warning/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mainMenu/warning/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-05-22_4_52_p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-05-22_4_52_p_m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Chica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Chica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Foxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Foxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameTimedSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameTimedSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Fredbear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Fredbear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/101.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/101.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/102.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/102.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/103.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/103.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/104.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/104.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/106.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/106.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/155.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/155.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/158.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/158.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/159.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/159.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/97.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/97.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/98.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/98.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/99.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/99.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bonnie/hallwayRetreat/999.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bonnie/left/999.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/193.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/193.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/194.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/194.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/195.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/195.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/196.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/196.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/197.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/197.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/198.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/198.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/199.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/199.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/200.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/200.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/201.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/201.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/202.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/202.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/206.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/206.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/207.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/207.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/208.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/208.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/209.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/209.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/210.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/210.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/211.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/211.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/213.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/213.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/263.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/263.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chica/hallwayRetreat/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chica/right/3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +34,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="506533bf-9655-4b1b-8ca2-e36b4c57a8a2" />
+        <option name="activeSessionId" value="fe71bf08-cf18-433c-96eb-ca6734ee19e6" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -196,6 +170,14 @@
             <option name="status" value="Completed" />
             <option name="targetType" value="LOCAL" />
           </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="fe71bf08-cf18-433c-96eb-ca6734ee19e6" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
         </option>
         <option name="type" value="PANEL" />
       </chat>
@@ -291,35 +273,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build FiveNightsAtFreddys4.executor": "Run",
-    "Gradle.FiveNightsAtFreddys4 [:org.fivenightsatfreddys4.Main.main()].executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "JAR Application.Runnable.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin.DESKTOP-B54H3PO/Documents/FiveNightsAtFreddys4/src/main/resources/mainMenu",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/IdeaProjects/FiveNightsAtFreddys4/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15039062",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build FiveNightsAtFreddys4.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FiveNightsAtFreddys4 [:org.fivenightsatfreddys4.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.Runnable.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin.DESKTOP-B54H3PO/Documents/FiveNightsAtFreddys4/src/main/resources/mainMenu&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IdeaProjects/FiveNightsAtFreddys4/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15039062&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin.DESKTOP-B54H3PO\Documents\FiveNightsAtFreddys4\src\main\resources\mainMenu" />
@@ -462,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779981510507</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="began adding the main menu">
+      <option name="closed" value="true" />
+      <created>1779983206746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1779983206746</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +476,8 @@
     <MESSAGE value="organized and cleaned up a bunch of files" />
     <MESSAGE value="finished on audio and video streaming" />
     <MESSAGE value="worded on tyjingts" />
-    <option name="LAST_COMMIT_MESSAGE" value="worded on tyjingts" />
+    <MESSAGE value="began adding the main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="began adding the main menu" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

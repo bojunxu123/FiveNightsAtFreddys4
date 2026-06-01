@@ -9,6 +9,9 @@ public abstract class Animatronic {
     public void setAggressionLevel(int a){
         aggressionLevel=a;
     }
+    public void addAggressionLevel(int a){
+        aggressionLevel+=a;
+    }
     public int getAggressionLevel(){
         return aggressionLevel;
     }
@@ -19,6 +22,11 @@ public abstract class Animatronic {
         return currentPos;
     }
 
-    public abstract boolean movementOpportunity(Player p);
+    protected void tryMove() {
+        if (Math.random() < aggressionLevel/20.0) {
+            this.movementOpportunity();
+        }
+    }
+    public abstract void movementOpportunity();
     
 }

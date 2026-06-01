@@ -8,7 +8,7 @@ public class Fredbear extends Animatronic {
     }
 
     @Override
-    public boolean movementOpportunity(Player p) {
+    public boolean movementOpportunity() {
         return false;
     }
 }
