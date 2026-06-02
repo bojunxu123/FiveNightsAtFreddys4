@@ -15,7 +15,6 @@ public class FrameSequence implements Playable {
         URL url = getClass().getResource("/" + path);
         File root = new File(url.getPath());
         File[] frameFiles = root.listFiles();
-
         size = frameFiles.length;
         frames = new BufferedImage[size];
 
@@ -28,6 +27,7 @@ public class FrameSequence implements Playable {
             else {
                 for (int i = 0; i < size; i++) {
                     frames[i] = ImageIO.read(frameFiles[i]);
+
                 }
             }
         }

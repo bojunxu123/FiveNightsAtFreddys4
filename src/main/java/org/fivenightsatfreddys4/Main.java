@@ -21,6 +21,10 @@ public class Main extends javax.swing.JFrame {
 
     public final static Timer timer = new Timer();
 
+    private final static Timer renderTimer = new Timer();
+
+    public static Player player;
+
     public static Bonnie bonnie;
 
     public static Chica chica;
@@ -31,7 +35,7 @@ public class Main extends javax.swing.JFrame {
 
     public static Fredbear fredbear;
 
-    public static int hour;
+    public static int hour = -1;
 
     private JButton newGame;
 
@@ -64,7 +68,6 @@ public class Main extends javax.swing.JFrame {
 
         FrameSequences.introWarning.play();
         timer.schedule(showButtons,FrameSequences.introWarning.getLength());
-        System.out.println(FrameSequences.introWarning.getLength());
 
         newGame = new JButton("New Game", new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/731.png"))));
         newGame.setBounds(433,360,168,22);
@@ -73,8 +76,11 @@ public class Main extends javax.swing.JFrame {
         newGame.setFocusPainted(false);
         newGame.setOpaque(false);
         newGame.setBorderPainted(false);
+        newGame.addActionListener(e -> {
+            Nights.loadNight(1);
+            System.out.println("loading night sir");
+        });
         getContentPane().add(newGame);
-
         pack();
     }
 
@@ -100,7 +106,7 @@ public class Main extends javax.swing.JFrame {
                             FramePlayer.tick();
                         }
                     };
-                    timer.scheduleAtFixedRate(render,0,renderInterval);
+                    renderTimer.scheduleAtFixedRate(render,0,renderInterval);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -113,7 +119,7 @@ public class Main extends javax.swing.JFrame {
         @Override
         public void run() {
             newGame.setVisible(true);
-            System.out.println("I show u new game");
+            FrameSequences.introWarning = null;
         }
     };
 

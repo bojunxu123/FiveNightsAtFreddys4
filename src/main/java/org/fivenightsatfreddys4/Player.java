@@ -17,11 +17,12 @@ public class Player {
     private static final EnumMap<Position,FrameSequence> leave = new EnumMap<>(Position.class);
 
     public Player() {
-
+        FramePlayer.playClip(new FrameSequence("foxy/roomJumpscare"));
+        System.out.println("Player initialized");
     }
 
     public void pan(Position to) {
-        if (looking == Position.BEDROOM) {
+        if (to == Position.BEDROOM) {
             FramePlayer.playClip(pan.get(looking),true);
         }
         else {
@@ -46,10 +47,9 @@ public class Player {
     }
 
     public void toggleDoor() {
-        FramePlayer.playClip(pan.get(pos),doorClosed);
+        FramePlayer.playClip(close.get(pos),doorClosed);;
         doorClosed = !doorClosed;
     }
-
 
     public boolean isDoorClosed(Position door){
         return doorClosed && pos == door;

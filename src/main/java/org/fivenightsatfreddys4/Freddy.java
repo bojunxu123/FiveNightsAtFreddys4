@@ -1,28 +1,20 @@
 package org.fivenightsatfreddys4;
 
 public class Freddy extends Animatronic {
-    private static final String NAME = "Freddy";
-    private int currentProgress;
+
 
     public Freddy(int aggressionLevel) {
+        super(aggressionLevel);
         currentPos = Position.BED;
-        this.aggressionLevel = aggressionLevel;
     }
 
-    public boolean movementOpportunity(Player p) {
-        if (!p.getPos().equals(Position.BED)) { //if player isn't watching the bed
-            currentProgress += aggressionLevel; //get more aggressive
-            return true;
-        } else {
-            return false; //if the player is watching do nothing
-        }
+    public void movementOpportunity() {
+
     }
 
-    public void jumpscareInRoom() {
-        // TODO: implement jumpscare animation
+    @Override
+    protected boolean isThreat() {
+        return aggressionLevel > 0;
     }
 
-    public void jumpscareBed() {
-        // TODO: implement jumpscare animation
-    }
 }

@@ -19,7 +19,7 @@ public class FrameSequences{
     private static final FrameSequence closetFoxy4 = new FrameSequence("foxy/stage4");
     private static final FrameSequence closetFredbear = new FrameSequence("fredbear/closet");
 
-    public static final FrameSequence introWarning = new FrameTimedSequence("mainMenu/warning", 16);
+    public static FrameSequence introWarning = new FrameTimedSequence("mainMenu/warning", 16);
     public static void showLeftDoor() {
         if (Main.foxy.currentPos == Position.LEFT_HALLWAY) {
             leftFoxy.play();

@@ -1,14 +1,18 @@
 package org.fivenightsatfreddys4;
 
 public class Fredbear extends Animatronic {
-    private static final String NAME = "Fredbear";
 
-    public void jumpscare() {
-        // TODO: implement jumpscare animation
+    public Fredbear(int aggressionLevel) {
+        super(aggressionLevel);
     }
 
     @Override
-    public boolean movementOpportunity() {
+    public void movementOpportunity() {
+
+    }
+
+    @Override
+    protected boolean isThreat() {
         return false;
     }
 }

@@ -45,16 +45,31 @@ public class Nights {
         }
     };
 
+    public static final TimerTask movementOpportunity = new TimerTask() {
+        @Override
+        public void run() {
+            Main.bonnie.tryMove();
+            Main.chica.tryMove();
+            Main.freddy.tryMove();
+            Main.foxy.tryMove();
+            Main.fredbear.tryMove();
+        }
+    };
+
     public static void loadNight(int i) {
         night = i;
 
-        Main.bonnie.setAggressionLevel(nights[i].bonnieAI);
-        Main.chica.setAggressionLevel(nights[i].chicaAI);
-        Main.freddy.setAggressionLevel(nights[i].freddyAI);
-        Main.foxy.setAggressionLevel(nights[i].foxyAI);
-        Main.fredbear.setAggressionLevel(nights[i].fredbearAI);
-
-        Main.timer.scheduleAtFixedRate(nextHour, 0, 90000);
+        Main.player = new Player();
+//
+//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
+//        Main.chica = new Chica(nights[i].chicaAI);
+//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
+//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
+//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
+//
+//        Main.timer.purge();
+//        Main.timer.scheduleAtFixedRate(nextHour, 0, 90000);
+//        Main.timer.scheduleAtFixedRate(movementOpportunity, 0, 5000);
     }
 
     private static final Night[] nights = new Night[] {
