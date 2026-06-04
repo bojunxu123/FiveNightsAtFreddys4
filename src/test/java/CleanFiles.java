@@ -1,3 +1,4 @@
+DecimalFormat df = new DecimalFormat("000");
 void main() throws IOException {
     File resources = new File("src/main/resources");
     File[] animations = resources.listFiles();
@@ -13,10 +14,11 @@ void main() throws IOException {
             framesSorted.add(tf);
         }
         framesSorted.sort(Comparator.comparingInt(f -> f.number));
-        for (TestFile file : framesSorted) {
-            Files.move(file.file.toPath(), file.file.toPath().resolveSibling(file.number + ".png"));
-        }
         System.out.println(Arrays.toString(framesSorted.toArray()));
+        for (int i = 0; i < framesSorted.size(); i++) {
+            TestFile file = framesSorted.get(i);
+            Files.move(file.file.toPath(), file.file.toPath().resolveSibling(df.format(i) + ".png"));
+        }
     }
 }
 

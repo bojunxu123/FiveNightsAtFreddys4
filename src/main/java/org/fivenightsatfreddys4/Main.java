@@ -7,6 +7,8 @@ package org.fivenightsatfreddys4;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -43,6 +45,8 @@ public class Main extends javax.swing.JFrame {
 
     private JButton rightDoor;
 
+    private JButton center;
+
     public Main() throws IOException {
         initComponents();
         setResizable(false);
@@ -65,7 +69,7 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/1.png")));
+        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/000.png")));
         JLabel screen = new JLabel(viewport);
         FramePlayer.link(screen);
         this.setContentPane(screen);
@@ -73,7 +77,7 @@ public class Main extends javax.swing.JFrame {
         FrameSequences.introWarning.play();
         timer.schedule(showButtons,FrameSequences.introWarning.getLength());
 
-        newGame = new JButton("New Game", new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/731.png"))));
+        newGame = new JButton("New Game", new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/003.png"))));
         newGame.setBounds(433,360,168,22);
         newGame.setVisible(false);
         newGame.setContentAreaFilled(false);
@@ -83,34 +87,88 @@ public class Main extends javax.swing.JFrame {
         newGame.addActionListener(e -> {
             Nights.loadNight(1);
             System.out.println("loading night sir");
+            newGame.setVisible(false);
         });
         getContentPane().add(newGame);
 
         leftDoor = new JButton();
         leftDoor.setBounds(0,0,256,768);
 //        leftDoor.setVisible(false);
-//        leftDoor.setContentAreaFilled(false);
-//        leftDoor.setFocusPainted(false);
-//        leftDoor.setOpaque(false);
-//        leftDoor.setBorderPainted(false);
+        leftDoor.setContentAreaFilled(false);
+        leftDoor.setFocusPainted(false);
+        leftDoor.setOpaque(false);
+        leftDoor.setBorderPainted(false);
 //        leftDoor.setEnabled(true);
         leftDoor.addActionListener(e -> {
-            player.move(Position.LEFT_DOOR);
+            if (player.getPos() == Position.BEDROOM) {
+                player.move(Position.LEFT_DOOR);
+            } else if (player.getPos() == Position.LEFT_DOOR) {
+                player.toggleDoor();
+            }
+        });
+        leftDoor.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent evt) {
+                if (player.getPos() == Position.BEDROOM) {
+                    player.pan(Position.LEFT_DOOR);
+                }
+            }
         });
         getContentPane().add(leftDoor);
 
         rightDoor = new JButton();
         rightDoor.setBounds(768,0,256,768);
 //        rightDoor.setVisible(false);
-//        rightDoor.setContentAreaFilled(false);
-//        rightDoor.setFocusPainted(false);
-//        rightDoor.setOpaque(false);
-//        rightDoor.setBorderPainted(false);
+        rightDoor.setContentAreaFilled(false);
+        rightDoor.setFocusPainted(false);
+        rightDoor.setOpaque(false);
+        rightDoor.setBorderPainted(false);
 //        rightDoor.setEnabled(true);
         rightDoor.addActionListener(e -> {
-            player.move(Position.RIGHT_DOOR);
+            if (player.getPos() == Position.BEDROOM) {
+                player.move(Position.RIGHT_DOOR);
+            }else if (player.getPos() == Position.RIGHT_DOOR) {
+                player.toggleDoor();
+            }
+        });
+        rightDoor.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent evt) {
+                if (player.getPos() == Position.BEDROOM) {
+                    player.pan(Position.RIGHT_DOOR);
+                }
+            }
         });
         getContentPane().add(rightDoor);
+
+        center = new JButton();
+        center.setBounds(256,0,512,768);
+        center.setContentAreaFilled(false);
+        center.setFocusPainted(false);
+        center.setOpaque(false);
+        center.setBorderPainted(false);
+        center.addActionListener(e -> {
+            if (player.getPos() == Position.BEDROOM) {
+                player.move(Position.CLOSET);
+            } else if (player.getPos() == Position.CLOSET) {
+                player.toggleDoor();
+            } else if (player.getPos() == Position.BED) {
+                // TODO: showBed()
+            } else if (player.getPos() == Position.LEFT_DOOR) {
+                FrameSequences.showLeftDoor();
+            } else if (player.getPos() == Position.RIGHT_DOOR) {
+                FrameSequences.showRightDoor();
+            }
+        });
+        center.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent evt) {
+                if (player.getPos() == Position.BEDROOM) {
+                    player.pan(Position.BEDROOM);
+                }
+            }
+        });
+        getContentPane().add(center);
 
         pack();
     }

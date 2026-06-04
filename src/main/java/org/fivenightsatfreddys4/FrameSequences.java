@@ -19,7 +19,14 @@ public class FrameSequences{
     private static final FrameSequence closetFoxy4 = new FrameSequence("foxy/stage4");
     private static final FrameSequence closetFredbear = new FrameSequence("fredbear/closet");
 
+    private static final FrameSequence bedEmpty = new FrameSequence("emptyBed");
+    private static final FrameSequence bedFredbear = new FrameSequence("fredbear/bed");
+    private static final FrameSequence bedFreddle1 = new FrameSequence("freddy/1/idle");
+    private static final FrameSequence bedFreddle2 = new FrameSequence("freddy/2/idle");
+    private static final FrameSequence bedFreddle3 = new FrameSequence("freddy/3/idle");
+
     public static FrameSequence introWarning = new FrameTimedSequence("mainMenu/warning", 16);
+
     public static void showLeftDoor() {
         if (Main.foxy.currentPos == Position.LEFT_HALLWAY) {
             leftFoxy.play();
@@ -72,4 +79,25 @@ public class FrameSequences{
             closetEmpty.play();
         }
     }
+
+//    public static void showBed() {
+//        if (Main.fredbear.currentPos == Position.BEDROOM) {
+//            bedFredbear.play();
+//        }
+//        else if (Main.freddy.progress < 10) {
+//            bedEmpty.play();
+//        }
+//        else if (Main.freddy.progress < 20) {
+//            bedFreddle1.play();
+//        }
+//        else if (Main.freddy.progress < 30) {
+//            bedFreddle2.play();
+//        }
+//        else if (Main.freddy.progress < 60) {
+//            bedFreddle3.play();
+//        }
+//        else {
+//            bedEmpty.play();
+//        }
+//    }
 }

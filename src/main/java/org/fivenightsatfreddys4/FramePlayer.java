@@ -29,9 +29,7 @@ public class FramePlayer {
     }
 
     public static void playClip(FrameSequence toPlay) {
-        frame = 0;
-        playing = true;
-        current = toPlay;
+        playClip(toPlay,false);
     }
 
     public static void playClip(FrameSequence toPlay, boolean reversed) {

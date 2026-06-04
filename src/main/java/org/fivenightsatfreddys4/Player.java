@@ -22,6 +22,7 @@ public class Player {
     }
 
     public void pan(Position to) {
+        if (to == looking && pos == Position.BEDROOM) return;
         if (to == Position.BEDROOM) {
             FramePlayer.playClip(pan.get(looking),true);
         }
@@ -32,6 +33,7 @@ public class Player {
     }
 
     public void move(Position to) {
+        if (to == pos) return;
         looking = Position.BEDROOM;
         if (to == Position.BEDROOM) {
             leave.get(pos).play();
@@ -65,8 +67,8 @@ public class Player {
         close.put(Position.RIGHT_DOOR, new FrameSequence("closeRight"));
         close.put(Position.CLOSET, new FrameSequence("closeCloset"));
 
-        pan.put(Position.LEFT_HALLWAY, new FrameSequence("panLeft"));
-        pan.put(Position.RIGHT_HALLWAY, new FrameSequence("panRight"));
+        pan.put(Position.LEFT_DOOR, new FrameSequence("panLeft"));
+        pan.put(Position.RIGHT_DOOR, new FrameSequence("panRight"));
 
         leave.put(Position.LEFT_DOOR, new FrameSequence("leaveLeft"));
         leave.put(Position.RIGHT_DOOR, new FrameSequence("leaveRight"));
