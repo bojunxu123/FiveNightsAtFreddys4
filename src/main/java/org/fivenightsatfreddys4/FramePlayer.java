@@ -16,8 +16,7 @@ public class FramePlayer {
 
     public static void tick() {
         if (current == null) return;
-        // 24 fps
-        frame++;
+        // when clip ends
         if (frame == current.size) {
             playing = false;
             current = null;
@@ -26,7 +25,7 @@ public class FramePlayer {
         else {
             viewport.setIcon(new ImageIcon(current.getFrame( reverse ? current.size - 1 - frame : frame)));
         }
-
+        frame++;
     }
 
     public static void playClip(FrameSequence toPlay) {

@@ -10,151 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="began adding the main menu">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/270.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/271.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/272.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/288.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/306.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/308.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/309.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/313.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/327.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/328.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/330.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/331.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/332.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/333.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/334.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/335.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/336.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/337.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/338.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/339.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/340.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/341.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/342.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/foxy/roomJumpscare/343.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/270.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/274.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/344.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/345.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/347.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/348.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/349.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/350.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/351.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/352.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/353.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/354.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/355.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/356.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/357.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/358.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/378.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/594.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/596.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/622.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/624.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/625.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fredbear/roomJumpscare/626.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/room/58.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-05-25_3_49_p_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-05-25_3_49_p_m___Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CleanFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Chica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Chica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Foxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Foxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FrameSequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Fredbear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Fredbear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Freddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Freddy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FramePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/FramePlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Nights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Nights.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/270.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/270.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/271.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/271.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/272.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/272.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/288.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/288.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/306.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/306.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/308.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/308.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/309.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/309.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/310.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/310.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/313.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/313.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/327.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/327.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/328.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/328.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/330.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/330.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/331.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/331.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/332.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/332.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/333.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/333.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/334.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/334.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/335.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/335.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/336.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/336.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/337.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/337.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/338.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/338.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/339.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/339.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/340.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/340.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/341.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/341.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/342.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/342.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/foxy/jumpscare/343.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/foxy/doorJumpscare/343.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/270.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/270.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/274.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/274.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/344.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/344.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/345.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/345.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/347.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/347.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/348.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/348.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/349.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/349.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/350.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/350.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/351.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/351.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/352.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/352.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/353.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/353.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/354.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/354.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/355.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/355.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/356.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/356.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/357.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/357.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/358.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/358.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/378.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/378.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/594.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/594.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/596.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/596.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/622.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/622.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/624.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/624.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/625.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/625.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fredbear/jumpscare/626.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fredbear/doorJumpscare/626.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/595.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/595.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/596.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/596.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/597.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/597.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/598.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/598.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/599.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/599.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/600.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/600.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/601.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/601.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/602.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/602.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/603.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/603.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/604.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/604.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/605.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/605.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/606.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/606.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/607.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/607.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/608.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/608.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/609.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/609.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/610.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/610.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/611.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/611.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/612.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/612.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/613.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/613.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/614.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/614.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/615.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/615.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/616.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/616.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/617.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/617.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/618.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/618.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/619.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/619.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/freddy/bedJumpscare/620.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/freddy/doorJumpscare/620.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRight/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRight/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRight/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/panRight/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/panRight/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/danger/flash1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/danger/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/danger/flash2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/danger/2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,6 +217,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="SimpleSourceFile" />
       </list>
     </option>
   </component>
@@ -403,35 +266,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build FiveNightsAtFreddys4.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FiveNightsAtFreddys4 [:org.fivenightsatfreddys4.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.Runnable.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin.DESKTOP-B54H3PO/Documents/FiveNightsAtFreddys4/src/main/resources/room&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IdeaProjects/FiveNightsAtFreddys4/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15039062&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build FiveNightsAtFreddys4.executor": "Run",
+    "Gradle.FiveNightsAtFreddys4 [:CleanFiles.main()].executor": "Run",
+    "Gradle.FiveNightsAtFreddys4 [:org.fivenightsatfreddys4.Main.main()].executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "JAR Application.Runnable.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin.DESKTOP-B54H3PO/Documents/FiveNightsAtFreddys4/src/main/resources/room",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/IdeaProjects/FiveNightsAtFreddys4/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15039062",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin.DESKTOP-B54H3PO\Documents\FiveNightsAtFreddys4\src\main\resources\room" />

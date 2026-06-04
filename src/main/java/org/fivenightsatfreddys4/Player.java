@@ -17,7 +17,7 @@ public class Player {
     private static final EnumMap<Position,FrameSequence> leave = new EnumMap<>(Position.class);
 
     public Player() {
-        FramePlayer.playClip(new FrameSequence("foxy/roomJumpscare"));
+        FramePlayer.playClip(new FrameSequence("room"));
         System.out.println("Player initialized");
     }
 

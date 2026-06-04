@@ -39,6 +39,10 @@ public class Main extends javax.swing.JFrame {
 
     private JButton newGame;
 
+    private JButton leftDoor;
+
+    private JButton rightDoor;
+
     public Main() throws IOException {
         initComponents();
         setResizable(false);
@@ -81,6 +85,33 @@ public class Main extends javax.swing.JFrame {
             System.out.println("loading night sir");
         });
         getContentPane().add(newGame);
+
+        leftDoor = new JButton();
+        leftDoor.setBounds(0,0,256,768);
+//        leftDoor.setVisible(false);
+//        leftDoor.setContentAreaFilled(false);
+//        leftDoor.setFocusPainted(false);
+//        leftDoor.setOpaque(false);
+//        leftDoor.setBorderPainted(false);
+//        leftDoor.setEnabled(true);
+        leftDoor.addActionListener(e -> {
+            player.move(Position.LEFT_DOOR);
+        });
+        getContentPane().add(leftDoor);
+
+        rightDoor = new JButton();
+        rightDoor.setBounds(768,0,256,768);
+//        rightDoor.setVisible(false);
+//        rightDoor.setContentAreaFilled(false);
+//        rightDoor.setFocusPainted(false);
+//        rightDoor.setOpaque(false);
+//        rightDoor.setBorderPainted(false);
+//        rightDoor.setEnabled(true);
+        rightDoor.addActionListener(e -> {
+            player.move(Position.RIGHT_DOOR);
+        });
+        getContentPane().add(rightDoor);
+
         pack();
     }
 
