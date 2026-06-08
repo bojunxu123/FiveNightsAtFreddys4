@@ -1,5 +1,8 @@
 package org.fivenightsatfreddys4;
 
+import org.fivenightsatfreddys4.animation.FramePlayer;
+import org.fivenightsatfreddys4.animation.FrameSequence;
+
 import java.util.EnumMap;
 
 public class Player {
@@ -8,7 +11,9 @@ public class Player {
     private boolean flashlight = false;
     private boolean doorClosed;
 
-    private static final EnumMap<Position,FrameSequence> check = new EnumMap<>(Position.class);
+    private static final EnumMap<Position, FrameSequence> checkEnd = new EnumMap<>(Position.class);
+
+    private static final EnumMap<Position, FrameSequence> checkStart = new EnumMap<>(Position.class);
 
     private static final EnumMap<Position,FrameSequence> close = new EnumMap<>(Position.class);
 
@@ -16,8 +21,12 @@ public class Player {
 
     private static final EnumMap<Position,FrameSequence> leave = new EnumMap<>(Position.class);
 
+    private static final FrameSequence run = new FrameSequence("run");
+
+    private static final FrameSequence home = new FrameSequence("checkBedroom");
+
     public Player() {
-        FramePlayer.playClip(new FrameSequence("room"));
+        FramePlayer.playClip(home);
         System.out.println("Player initialized");
     }
 
@@ -36,10 +45,18 @@ public class Player {
         if (to == pos) return;
         looking = Position.BEDROOM;
         if (to == Position.BEDROOM) {
-            leave.get(pos).play();
+            if (pos == Position.BED) {
+                FramePlayer.playClip(checkEnd.get(Position.BED),true);
+            }
+            else {
+                FramePlayer.playClips(leave.get(pos),run,home);
+            }
+        }
+        else if (to == Position.BED) {
+            checkEnd.get(Position.BED).play();
         }
         else {
-            check.get(to).play();
+            FramePlayer.playClips(checkStart.get(to),run,checkEnd.get(to));
         }
         pos = to;
     }
@@ -58,10 +75,15 @@ public class Player {
     }
 
     static {
-        check.put(Position.BED, new FrameSequence("checkBed"));
-        check.put(Position.CLOSET, new FrameSequence("checkCloset"));
-        check.put(Position.LEFT_DOOR, new FrameSequence("checkLeft"));
-        check.put(Position.RIGHT_DOOR, new FrameSequence("checkRight"));
+        checkEnd.put(Position.BED, new FrameSequence("checkBed"));
+        checkEnd.put(Position.CLOSET, new FrameSequence("checkClosetEnd"));
+        checkEnd.put(Position.LEFT_DOOR, new FrameSequence("checkLeftEnd"));
+        checkEnd.put(Position.RIGHT_DOOR, new FrameSequence("checkRightEnd"));
+
+
+        checkStart.put(Position.CLOSET, new FrameSequence("checkClosetStart"));
+        checkStart.put(Position.LEFT_DOOR, new FrameSequence("checkLeftStart"));
+        checkStart.put(Position.RIGHT_DOOR, new FrameSequence("checkRightStart"));
 
         close.put(Position.LEFT_DOOR, new FrameSequence("closeLeft"));
         close.put(Position.RIGHT_DOOR, new FrameSequence("closeRight"));
@@ -72,7 +94,6 @@ public class Player {
 
         leave.put(Position.LEFT_DOOR, new FrameSequence("leaveLeft"));
         leave.put(Position.RIGHT_DOOR, new FrameSequence("leaveRight"));
-        leave.put(Position.BED, new FrameSequence("checkBed",true));
         leave.put(Position.CLOSET, new FrameSequence("leaveCloset"));
 
     }

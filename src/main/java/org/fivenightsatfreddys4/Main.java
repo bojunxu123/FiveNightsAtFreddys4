@@ -4,9 +4,11 @@
  */
 package org.fivenightsatfreddys4;
 
+import org.fivenightsatfreddys4.animation.FramePlayer;
+import org.fivenightsatfreddys4.animation.FrameSequences;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.io.IOException;
@@ -46,6 +48,8 @@ public class Main extends javax.swing.JFrame {
     private JButton rightDoor;
 
     private JButton center;
+
+    private JButton lower;
 
     public Main() throws IOException {
         initComponents();
@@ -88,17 +92,20 @@ public class Main extends javax.swing.JFrame {
             Nights.loadNight(1);
             System.out.println("loading night sir");
             newGame.setVisible(false);
+            lower.setVisible(true);
+            center.setVisible(true);
+            rightDoor.setVisible(true);
+            leftDoor.setVisible(true);
         });
         getContentPane().add(newGame);
 
         leftDoor = new JButton();
         leftDoor.setBounds(0,0,256,768);
-//        leftDoor.setVisible(false);
         leftDoor.setContentAreaFilled(false);
         leftDoor.setFocusPainted(false);
         leftDoor.setOpaque(false);
         leftDoor.setBorderPainted(false);
-//        leftDoor.setEnabled(true);
+        leftDoor.setVisible(false);
         leftDoor.addActionListener(e -> {
             if (player.getPos() == Position.BEDROOM) {
                 player.move(Position.LEFT_DOOR);
@@ -118,12 +125,11 @@ public class Main extends javax.swing.JFrame {
 
         rightDoor = new JButton();
         rightDoor.setBounds(768,0,256,768);
-//        rightDoor.setVisible(false);
         rightDoor.setContentAreaFilled(false);
         rightDoor.setFocusPainted(false);
         rightDoor.setOpaque(false);
         rightDoor.setBorderPainted(false);
-//        rightDoor.setEnabled(true);
+        rightDoor.setVisible(false);
         rightDoor.addActionListener(e -> {
             if (player.getPos() == Position.BEDROOM) {
                 player.move(Position.RIGHT_DOOR);
@@ -142,11 +148,12 @@ public class Main extends javax.swing.JFrame {
         getContentPane().add(rightDoor);
 
         center = new JButton();
-        center.setBounds(256,0,512,768);
+        center.setBounds(256,0,512,600);
         center.setContentAreaFilled(false);
         center.setFocusPainted(false);
         center.setOpaque(false);
         center.setBorderPainted(false);
+        center.setVisible(false);
         center.addActionListener(e -> {
             if (player.getPos() == Position.BEDROOM) {
                 player.move(Position.CLOSET);
@@ -163,12 +170,38 @@ public class Main extends javax.swing.JFrame {
         center.addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(MouseEvent evt) {
+                System.out.println("centre");
                 if (player.getPos() == Position.BEDROOM) {
                     player.pan(Position.BEDROOM);
                 }
             }
         });
         getContentPane().add(center);
+
+        lower = new JButton();
+        lower.setBounds(256,600,512,168);
+        lower.setContentAreaFilled(false);
+        lower.setFocusPainted(false);
+        lower.setOpaque(false);
+        lower.setBorderPainted(false);
+        lower.setVisible(false);
+        lower.addActionListener(e -> {
+            if (player.getPos() == Position.BEDROOM) {
+                player.move(Position.BED);
+            } else {
+                player.move(Position.BEDROOM);
+            }
+        });
+        lower.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent evt) {
+                if (player.getPos() == Position.BEDROOM) {
+                    player.pan(Position.BEDROOM);
+                }
+            }
+        });
+
+        getContentPane().add(lower);
 
         pack();
     }

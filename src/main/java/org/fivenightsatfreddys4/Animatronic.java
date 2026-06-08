@@ -1,12 +1,13 @@
 package org.fivenightsatfreddys4;
 
+import org.fivenightsatfreddys4.animation.FrameSequence;
+
 public abstract class Animatronic {
 
     protected int aggressionLevel;
     public int progress;;
-    protected Position currentPos;
+    public Position currentPos;
     protected FrameSequence doorJumpscare;
-    protected FrameSequence roomJumpscare;
 
     public void setAggressionLevel(int a){
         aggressionLevel=a;
@@ -34,10 +35,7 @@ public abstract class Animatronic {
     }
 
     public Animatronic(int aggressionLevel) {
-        System.out.println(getClass().getSimpleName().toLowerCase() + "/doorJumpscare");
-        System.out.println(getClass().getSimpleName().toLowerCase() + "/roomJumpscare");
         this.doorJumpscare = new FrameSequence(getClass().getSimpleName().toLowerCase() + "/doorJumpscare");
-        this.roomJumpscare = new FrameSequence(getClass().getSimpleName().toLowerCase() + "/roomJumpscare");
         this.aggressionLevel = aggressionLevel;
     }
 

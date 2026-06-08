@@ -60,12 +60,12 @@ public class Nights {
         night = i;
 
         Main.player = new Player();
-//
-//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
-//        Main.chica = new Chica(nights[i].chicaAI);
-//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
-//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
-//        Main.bonnie = new Bonnie(nights[i].bonnieAI);
+
+        Main.bonnie = new Bonnie(nights[i].bonnieAI);
+        Main.chica = new Chica(nights[i].chicaAI);
+        Main.freddy = new Freddy(nights[i].freddyAI);
+        Main.foxy = new Foxy(nights[i].foxyAI);
+        Main.fredbear = new Fredbear(nights[i].fredbearAI);
 //
 //        Main.timer.purge();
 //        Main.timer.scheduleAtFixedRate(nextHour, 0, 90000);
