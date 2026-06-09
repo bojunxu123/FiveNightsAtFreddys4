@@ -60,4 +60,20 @@ public class FramePlayer {
         }
     }
 
+    public static int getDuration() {
+        int duration = current.size - frame;
+        for (FrameSequence clip : queue) {
+            duration += clip.size;
+        }
+        return duration;
+    }
+
+    public static boolean isPlaying() {
+        return playing;
+    }
+
+    public static void reverse() {
+        reverse = !reverse;
+        frame = current.size - frame;
+    }
 }

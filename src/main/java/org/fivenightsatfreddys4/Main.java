@@ -23,6 +23,8 @@ public class Main extends javax.swing.JFrame {
 
     public final static int renderInterval = 41;
 
+    private static JLabel screen;
+
     public final static Timer timer = new Timer();
 
     private final static Timer renderTimer = new Timer();
@@ -74,7 +76,7 @@ public class Main extends javax.swing.JFrame {
         );
 
         ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/000.png")));
-        JLabel screen = new JLabel(viewport);
+        screen = new JLabel(viewport);
         FramePlayer.link(screen);
         this.setContentPane(screen);
 
@@ -109,8 +111,6 @@ public class Main extends javax.swing.JFrame {
         leftDoor.addActionListener(e -> {
             if (player.getPos() == Position.BEDROOM) {
                 player.move(Position.LEFT_DOOR);
-            } else if (player.getPos() == Position.LEFT_DOOR) {
-                player.toggleDoor();
             }
         });
         leftDoor.addMouseMotionListener(new MouseMotionAdapter() {
@@ -133,8 +133,6 @@ public class Main extends javax.swing.JFrame {
         rightDoor.addActionListener(e -> {
             if (player.getPos() == Position.BEDROOM) {
                 player.move(Position.RIGHT_DOOR);
-            }else if (player.getPos() == Position.RIGHT_DOOR) {
-                player.toggleDoor();
             }
         });
         rightDoor.addMouseMotionListener(new MouseMotionAdapter() {
@@ -154,23 +152,61 @@ public class Main extends javax.swing.JFrame {
         center.setOpaque(false);
         center.setBorderPainted(false);
         center.setVisible(false);
-        center.addActionListener(e -> {
-            if (player.getPos() == Position.BEDROOM) {
-                player.move(Position.CLOSET);
-            } else if (player.getPos() == Position.CLOSET) {
-                player.toggleDoor();
-            } else if (player.getPos() == Position.BED) {
-                // TODO: showBed()
-            } else if (player.getPos() == Position.LEFT_DOOR) {
-                FrameSequences.showLeftDoor();
-            } else if (player.getPos() == Position.RIGHT_DOOR) {
-                FrameSequences.showRightDoor();
+        center.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                // Check if BUTTON3 (the right mouse button) was pressed
+                if (e.getButton() == MouseEvent.BUTTON3) {
+                    if (player.getMoveCooldown() <= 0) {
+                        if (player.getPos() == Position.CLOSET && !player.isDoorClosed(Position.CLOSET)) {
+                            FrameSequences.showCloset();
+                        }
+                        else if (player.getPos() == Position.LEFT_DOOR && !player.isDoorClosed(Position.LEFT_DOOR)) {
+                            FrameSequences.showLeftDoor();
+                        }
+                        else if (player.getPos() == Position.RIGHT_DOOR && !player.isDoorClosed(Position.RIGHT_DOOR)) {
+                            FrameSequences.showRightDoor();
+                        }
+                    }
+                } else if (e.getButton() == MouseEvent.BUTTON1) {
+                    if (player.getPos() == Position.BEDROOM) {
+                        player.move(Position.CLOSET);
+                    } else if (player.getPos() != Position.BED) {
+                        player.toggleDoor();
+                    }
+                }
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON3) {
+                    if (player.getMoveCooldown() <= 0) {
+                        try {
+                            if (player.getPos() == Position.CLOSET && !player.isDoorClosed(Position.CLOSET)) {
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkClosetEnd/047.png"))));
+                            }
+                            else if (player.getPos() == Position.LEFT_DOOR && !player.isDoorClosed(Position.LEFT_DOOR)) {
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkLeftEnd/062.png"))));
+                            }
+                            else if (player.getPos() == Position.RIGHT_DOOR && !player.isDoorClosed(Position.RIGHT_DOOR)) {
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkRightEnd/065.png"))));
+                            }
+                        }
+                        catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+                }
+                else if (e.getButton() == MouseEvent.BUTTON1) {
+                    if (player.getPos() != Position.BED && player.getPos() != Position.BEDROOM) {
+                        player.toggleDoor();
+                    }
+                }
             }
         });
         center.addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(MouseEvent evt) {
-                System.out.println("centre");
                 if (player.getPos() == Position.BEDROOM) {
                     player.pan(Position.BEDROOM);
                 }
@@ -226,6 +262,9 @@ public class Main extends javax.swing.JFrame {
                         @Override
                         public void run() {
                             FramePlayer.tick();
+                            if (player != null) {
+                                player.tick();
+                            }
                         }
                     };
                     renderTimer.scheduleAtFixedRate(render,0,renderInterval);

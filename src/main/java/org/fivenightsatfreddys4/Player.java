@@ -8,8 +8,9 @@ import java.util.EnumMap;
 public class Player {
     private Position pos = Position.BEDROOM;
     private Position looking = Position.BEDROOM;
-    private boolean flashlight = false;
     private boolean doorClosed;
+
+    private int moveCooldown;
 
     private static final EnumMap<Position, FrameSequence> checkEnd = new EnumMap<>(Position.class);
 
@@ -42,6 +43,7 @@ public class Player {
     }
 
     public void move(Position to) {
+        if (moveCooldown > 0) return;
         if (to == pos) return;
         looking = Position.BEDROOM;
         if (to == Position.BEDROOM) {
@@ -59,6 +61,7 @@ public class Player {
             FramePlayer.playClips(checkStart.get(to),run,checkEnd.get(to));
         }
         pos = to;
+        moveCooldown = FramePlayer.getDuration();
     }
 
     public Position getPos() {
@@ -66,7 +69,14 @@ public class Player {
     }
 
     public void toggleDoor() {
-        FramePlayer.playClip(close.get(pos),doorClosed);;
+        if (moveCooldown > 0) {return;}
+        if (FramePlayer.isPlaying()) {
+            FramePlayer.reverse();
+        }
+        else {
+            FramePlayer.playClip(close.get(pos),doorClosed);
+        }
+        //moveCooldown = FramePlayer.getDuration();
         doorClosed = !doorClosed;
     }
 
@@ -98,4 +108,11 @@ public class Player {
 
     }
 
+    public void tick() {
+        moveCooldown--;
+    }
+
+    public int getMoveCooldown() {
+        return moveCooldown;
+    }
 }
