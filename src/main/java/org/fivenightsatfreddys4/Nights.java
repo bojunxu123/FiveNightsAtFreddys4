@@ -75,7 +75,7 @@ public class Nights {
     }
 
     private static final Night[] nights = new Night[] {
-        new Night(20,1,0,0,0),
+        new Night(0,20,0,20,0),
         new Night(5,5,2,1,0),
         new Night(7,7,3,10,0),
         new Night(10,10,4,5,0),

@@ -81,30 +81,32 @@ public class Player {
         }
         doorCooldown = FramePlayer.getDuration();
         doorClosed = !doorClosed;
-        if (pos == Position.LEFT_DOOR) {
-            if (Main.bonnie.currentPos == Position.LEFT_DOOR) {
-                Main.bonnie.currentPos = Position.LIVING_ROOM_CENTER;
-            }
-            else {
-                Main.bonnie.currentPos = Position.LEFT_DOOR;
-            }
-            if (Main.fredbear.currentPos == Position.LEFT_DOOR) {
-                Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
-            }
-            if (Main.fredbear.currentPos == Position.LEFT_DOOR) {
-                Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
-            }
-        } else if (pos == Position.RIGHT_DOOR) {
-            if (Main.chica.currentPos == Position.RIGHT_DOOR) {
-                Main.chica.currentPos = Position.LIVING_ROOM_CENTER;
-            } else {
-                Main.chica.currentPos = Position.RIGHT_DOOR;
-            }
-            if (Main.fredbear.currentPos == Position.RIGHT_DOOR) {
-                Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
-            }
-            if (Main.foxy.currentPos == Position.RIGHT_DOOR) {
-                Main.foxy.currentPos = Position.LIVING_ROOM_CENTER;
+        if (doorClosed) {
+            if (pos == Position.LEFT_DOOR) {
+                if (Main.bonnie.currentPos == Position.LEFT_DOOR) {
+                    Main.bonnie.currentPos = Position.LIVING_ROOM_CENTER;
+                }
+                else {
+                    Main.bonnie.currentPos = Position.LEFT_DOOR;
+                }
+                if (Main.fredbear.currentPos == Position.LEFT_DOOR) {
+                    Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
+                }
+                if (Main.fredbear.currentPos == Position.LEFT_DOOR) {
+                    Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
+                }
+            } else if (pos == Position.RIGHT_DOOR) {
+                if (Main.chica.currentPos == Position.RIGHT_DOOR) {
+                    Main.chica.currentPos = Position.LIVING_ROOM_CENTER;
+                } else {
+                    Main.chica.currentPos = Position.RIGHT_DOOR;
+                }
+                if (Main.fredbear.currentPos == Position.RIGHT_DOOR) {
+                    Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
+                }
+                if (Main.foxy.currentPos == Position.RIGHT_DOOR) {
+                    Main.foxy.currentPos = Position.LIVING_ROOM_CENTER;
+                }
             }
         }
     }

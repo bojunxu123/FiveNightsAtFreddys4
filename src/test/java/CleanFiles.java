@@ -12,6 +12,7 @@ void dispatch(File parent) throws IOException {
             if (!child.getName().equals("amLabel") && !child.getName().equals("audio") && !child.getName().equals("nightLabel")) {
                 dispatch(child);
             }
+            continue;
         }
         System.out.println(child.getName());
         framesSorted.add(new TestFile(child));
