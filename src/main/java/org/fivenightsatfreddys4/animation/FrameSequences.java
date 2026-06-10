@@ -22,23 +22,26 @@ public class FrameSequences{
     private static final FrameSequence closetFoxy4 = new FrameSequence("foxy/stage4");
     private static final FrameSequence closetFredbear = new FrameSequence("fredbear/closet");
 
-//    private static final FrameSequence bedEmpty = new FrameSequence("emptyBed");
-//    private static final FrameSequence bedFredbear = new FrameSequence("fredbear/bed");
-//    private static final FrameSequence bedFreddle1 = new FrameSequence("freddy/1/idle");
-//    private static final FrameSequence bedFreddle2 = new FrameSequence("freddy/2/idle");
-//    private static final FrameSequence bedFreddle3 = new FrameSequence("freddy/3/idle");
+    private static final FrameSequence bedEmpty = new FrameSequence("emptyBed");
+    private static final FrameSequence bedFredbear = new FrameSequence("fredbear/bed");
+    private static final FrameSequence bedFreddle1 = new FrameSequence("freddy/1/idle");
+    private static final FrameSequence bedFreddle2 = new FrameSequence("freddy/2/idle");
+    private static final FrameSequence bedFreddle3 = new FrameSequence("freddy/3/idle");
 
     public static FrameSequence introWarning = new FrameTimedSequence("mainMenu/warning", 16);
 
     public static void showLeftDoor() {
         if (Main.foxy.currentPos == Position.LEFT_HALLWAY) {
             leftFoxy.play();
+            Main.foxy.currentPos = Position.LIVING_ROOM_CENTER;
         }
         else if (Main.bonnie.currentPos == Position.LEFT_HALLWAY) {
             leftBonnie.play();
+            Main.bonnie.currentPos = Position.LIVING_ROOM_CENTER;
         }
         else if (Main.freddy.currentPos == Position.LEFT_HALLWAY) {
             leftFredbear.play();
+            Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
         }
         else {
             leftEmpty.play();
@@ -48,12 +51,15 @@ public class FrameSequences{
     public static void showRightDoor() {
         if (Main.foxy.currentPos == Position.RIGHT_HALLWAY) {
             rightFoxy.play();
+            Main.foxy.currentPos = Position.LIVING_ROOM_CENTER;
         }
         else if (Main.chica.currentPos == Position.RIGHT_HALLWAY) {
             rightChica.play();
+            Main.chica.currentPos = Position.LIVING_ROOM_CENTER;
         }
-        else if (Main.freddy.currentPos == Position.RIGHT_HALLWAY) {
+        else if (Main.fredbear.currentPos == Position.RIGHT_HALLWAY) {
             rightFredbear.play();
+            Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
         }
         else {
             rightEmpty.play();
@@ -63,6 +69,7 @@ public class FrameSequences{
     public static void showCloset() {
         if (Main.fredbear.currentPos == Position.CLOSET) {
             closetFredbear.play();
+            Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
         }
         else if (Main.foxy.currentPos == Position.CLOSET) {
             if (Main.foxy.progress < 2) {
@@ -83,24 +90,24 @@ public class FrameSequences{
         }
     }
 
-//    public static void showBed() {
-//        if (Main.fredbear.currentPos == Position.BEDROOM) {
-//            bedFredbear.play();
-//        }
-//        else if (Main.freddy.progress < 10) {
-//            bedEmpty.play();
-//        }
-//        else if (Main.freddy.progress < 20) {
-//            bedFreddle1.play();
-//        }
-//        else if (Main.freddy.progress < 30) {
-//            bedFreddle2.play();
-//        }
-//        else if (Main.freddy.progress < 60) {
-//            bedFreddle3.play();
-//        }
-//        else {
-//            bedEmpty.play();
-//        }
-//    }
+    public static void showBed() {
+        if (Main.fredbear.currentPos == Position.BEDROOM) {
+            bedFredbear.play();
+        }
+        else if (Main.freddy.progress < 10) {
+            bedEmpty.play();
+        }
+        else if (Main.freddy.progress < 20) {
+            bedFreddle1.play();
+        }
+        else if (Main.freddy.progress < 30) {
+            bedFreddle2.play();
+        }
+        else if (Main.freddy.progress < 60) {
+            bedFreddle3.play();
+        }
+        else {
+            bedEmpty.play();
+        }
+    }
 }

@@ -9,6 +9,7 @@ import org.fivenightsatfreddys4.animation.FrameSequences;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.io.IOException;
@@ -52,6 +53,17 @@ public class Main extends javax.swing.JFrame {
     private JButton center;
 
     private JButton lower;
+
+    private boolean inNight = false;
+
+    static private JPanel bonnieSquare;
+
+    static private JPanel foxySquare;
+
+    static private JPanel chicaSquare;
+
+    private static JPanel fredbearSquare;
+
 
     public Main() throws IOException {
         initComponents();
@@ -98,6 +110,7 @@ public class Main extends javax.swing.JFrame {
             center.setVisible(true);
             rightDoor.setVisible(true);
             leftDoor.setVisible(true);
+            inNight = true;
         });
         getContentPane().add(newGame);
 
@@ -157,7 +170,7 @@ public class Main extends javax.swing.JFrame {
             public void mousePressed(MouseEvent e) {
                 // Check if BUTTON3 (the right mouse button) was pressed
                 if (e.getButton() == MouseEvent.BUTTON3) {
-                    if (player.getMoveCooldown() <= 0) {
+                    if (player.getDoorCooldown() <= 0 && player.getMoveCooldown() <= 0) {
                         if (player.getPos() == Position.CLOSET && !player.isDoorClosed(Position.CLOSET)) {
                             FrameSequences.showCloset();
                         }
@@ -239,6 +252,45 @@ public class Main extends javax.swing.JFrame {
 
         getContentPane().add(lower);
 
+        for (Position pos : Position.values()) {
+            JPanel room = new JPanel() {
+                @Override
+                protected void paintComponent(Graphics g) {
+                    // Clear the graphics object safely without destroying underlying paint
+                    super.paintComponent(g);
+
+                    Graphics2D g2d = (Graphics2D) g.create();
+                    // Set the background color and an Alpha value (0 = clear, 255 = solid)
+                    g2d.setColor(new Color(150, 150, 150, 165)); // Semi-transparent black
+                    g2d.fillRect(0, 0, getWidth(), getHeight());
+                    g2d.dispose();
+                }
+            };
+            int x = pos.getCol();
+            int y = pos.getRow();
+            room.setBounds(802 + x * 50, 20 + y * 50, 40, 40);
+            getContentPane().add(room);
+            room.setOpaque(false);
+
+        }
+
+        bonnieSquare = new JPanel();
+        bonnieSquare.setBackground(new Color(0x575AFF));
+
+        chicaSquare = new JPanel();
+        chicaSquare.setBackground(new Color(0xFFFF38));
+
+        foxySquare = new JPanel();
+        foxySquare.setBackground(new Color(0xFF5626));
+
+        fredbearSquare = new JPanel();
+        fredbearSquare.setBackground(new Color(0x7E6800));
+
+        getContentPane().add(bonnieSquare);
+        getContentPane().add(chicaSquare);
+        getContentPane().add(foxySquare);
+        getContentPane().add(fredbearSquare);
+
         pack();
     }
 
@@ -264,6 +316,18 @@ public class Main extends javax.swing.JFrame {
                             FramePlayer.tick();
                             if (player != null) {
                                 player.tick();
+                                if (bonnie != null) {
+                                    bonnieSquare.setBounds(810 + bonnie.currentPos.getCol() * 50, 30 + bonnie.currentPos.getRow() * 50, 10, 10);
+                                }
+                                if (foxy != null) {
+                                    foxySquare.setBounds(817 + foxy.currentPos.getCol() * 50, 40 + foxy.currentPos.getRow() * 50, 10, 10);
+                                }
+                                if (chica != null) {
+                                    chicaSquare.setBounds(824 + chica.currentPos.getCol() * 50, 30 + chica.currentPos.getRow() * 50, 10, 10);
+                                }
+                                if (fredbear != null && fredbear.aggressionLevel > 0) {
+                                    fredbearSquare.setBounds(817 + fredbear.currentPos.getCol() * 50, 20 + fredbear.currentPos.getRow() * 50, 10, 10);
+                                }
                             }
                         }
                     };

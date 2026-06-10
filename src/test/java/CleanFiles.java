@@ -1,24 +1,26 @@
 DecimalFormat df = new DecimalFormat("000");
 void main() throws IOException {
-    File resources = new File("src/main/resources");
-    File[] animations = resources.listFiles();
-    for (File animation : animations) {
-        if (!animation.isDirectory()) continue;
-        if (animation.getName().equals("audio") || animation.getName().equals("amLabel") || animation.getName().equals("nightLabel")) continue;
-        File[] frames = animation.listFiles();
-        System.out.println(animation.getName());
-        ArrayList<TestFile> framesSorted = new ArrayList<>();
-        for (int i = 0; i < frames.length; i++) {
-            if (frames[i].isDirectory()) continue;
-            TestFile tf = new TestFile(frames[i]);
-            framesSorted.add(tf);
+    dispatch(new File("src/main/resources"));
+
+}
+
+void dispatch(File parent) throws IOException {
+    File[] children = parent.listFiles();
+    ArrayList<TestFile> framesSorted = new ArrayList<>();
+    for (File child : children) {
+        if (child.isDirectory()) {
+            if (!child.getName().equals("amLabel") && !child.getName().equals("audio") && !child.getName().equals("nightLabel")) {
+                dispatch(child);
+            }
         }
-        framesSorted.sort(Comparator.comparingInt(f -> f.number));
-        System.out.println(Arrays.toString(framesSorted.toArray()));
-        for (int i = 0; i < framesSorted.size(); i++) {
-            TestFile file = framesSorted.get(i);
-            Files.move(file.file.toPath(), file.file.toPath().resolveSibling(df.format(i) + ".png"));
-        }
+        System.out.println(child.getName());
+        framesSorted.add(new TestFile(child));
+    }
+    framesSorted.sort(Comparator.comparingInt(f -> f.number));
+    System.out.println(Arrays.toString(framesSorted.toArray()));
+    for (int i = 0; i < framesSorted.size(); i++) {
+        TestFile file = framesSorted.get(i);
+        Files.move(file.file.toPath(), file.file.toPath().resolveSibling(df.format(i) + ".png"));
     }
 }
 

@@ -12,6 +12,8 @@ public class Player {
 
     private int moveCooldown;
 
+    private int doorCooldown;
+
     private static final EnumMap<Position, FrameSequence> checkEnd = new EnumMap<>(Position.class);
 
     private static final EnumMap<Position, FrameSequence> checkStart = new EnumMap<>(Position.class);
@@ -32,6 +34,7 @@ public class Player {
     }
 
     public void pan(Position to) {
+        if (moveCooldown > 0) return;
         if (to == looking && pos == Position.BEDROOM) return;
         if (to == Position.BEDROOM) {
             FramePlayer.playClip(pan.get(looking),true);
@@ -76,8 +79,34 @@ public class Player {
         else {
             FramePlayer.playClip(close.get(pos),doorClosed);
         }
-        //moveCooldown = FramePlayer.getDuration();
+        doorCooldown = FramePlayer.getDuration();
         doorClosed = !doorClosed;
+        if (pos == Position.LEFT_DOOR) {
+            if (Main.bonnie.currentPos == Position.LEFT_DOOR) {
+                Main.bonnie.currentPos = Position.LIVING_ROOM_CENTER;
+            }
+            else {
+                Main.bonnie.currentPos = Position.LEFT_DOOR;
+            }
+            if (Main.fredbear.currentPos == Position.LEFT_DOOR) {
+                Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
+            }
+            if (Main.fredbear.currentPos == Position.LEFT_DOOR) {
+                Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
+            }
+        } else if (pos == Position.RIGHT_DOOR) {
+            if (Main.chica.currentPos == Position.RIGHT_DOOR) {
+                Main.chica.currentPos = Position.LIVING_ROOM_CENTER;
+            } else {
+                Main.chica.currentPos = Position.RIGHT_DOOR;
+            }
+            if (Main.fredbear.currentPos == Position.RIGHT_DOOR) {
+                Main.fredbear.currentPos = Position.LIVING_ROOM_CENTER;
+            }
+            if (Main.foxy.currentPos == Position.RIGHT_DOOR) {
+                Main.foxy.currentPos = Position.LIVING_ROOM_CENTER;
+            }
+        }
     }
 
     public boolean isDoorClosed(Position door){
@@ -110,9 +139,14 @@ public class Player {
 
     public void tick() {
         moveCooldown--;
+        doorCooldown--;
     }
 
     public int getMoveCooldown() {
         return moveCooldown;
+    }
+
+    public int getDoorCooldown() {
+        return doorCooldown;
     }
 }

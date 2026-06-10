@@ -4,15 +4,12 @@ public class Bonnie extends Animatronic {
 
     public Bonnie( int aggression) {
         super(aggression);
-        currentPos = Position.LIVING_ROOM_CENTER;
     }
 
     public void movementOpportunity() {
         // player is at the left door while Bonnie is in the hall or at the door he can't advance
         if (Main.player.getPos() == Position.LEFT_DOOR && (currentPos == Position.LEFT_HALLWAY || currentPos == Position.LEFT_DOOR)) {
             return;
-        } else if (Main.player.isDoorClosed(Position.LEFT_DOOR) && currentPos != Position.LEFT_DOOR) { // hes pulled to the door if he is there
-            currentPos = Position.LEFT_DOOR;
         } else if (currentPos == Position.LIVING_ROOM_CENTER) {
             currentPos = Position.LIVING_ROOM_LEFT;
         } else if (currentPos == Position.LIVING_ROOM_LEFT) {

@@ -48,6 +48,7 @@ public class Nights {
     public static final TimerTask movementOpportunity = new TimerTask() {
         @Override
         public void run() {
+            System.out.println("Movement opportunity");
             Main.bonnie.tryMove();
             Main.chica.tryMove();
             Main.freddy.tryMove();
@@ -58,6 +59,7 @@ public class Nights {
 
     public static void loadNight(int i) {
         night = i;
+        i--;
 
         Main.player = new Player();
 
@@ -66,14 +68,14 @@ public class Nights {
         Main.freddy = new Freddy(nights[i].freddyAI);
         Main.foxy = new Foxy(nights[i].foxyAI);
         Main.fredbear = new Fredbear(nights[i].fredbearAI);
-//
-//        Main.timer.purge();
-//        Main.timer.scheduleAtFixedRate(nextHour, 0, 90000);
-//        Main.timer.scheduleAtFixedRate(movementOpportunity, 0, 5000);
+
+        Main.timer.purge();
+        Main.timer.scheduleAtFixedRate(nextHour, 0, 90000);
+        Main.timer.scheduleAtFixedRate(movementOpportunity, 0, 5000);
     }
 
     private static final Night[] nights = new Night[] {
-        new Night(0,1,0,0,0),
+        new Night(20,1,0,0,0),
         new Night(5,5,2,1,0),
         new Night(7,7,3,10,0),
         new Night(10,10,4,5,0),

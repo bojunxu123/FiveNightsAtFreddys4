@@ -9,15 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="adeded stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-05-28_6_44_p_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-05-28_6_44_p_m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-06-01_12_34_p_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-06-01_12_34_p_m___Changes_.xml" beforeDir="false" />
+    <list default="true" id="c5585c4f-8d7a-43e1-903d-bb54372f7e37" name="Changes" comment="allah akbar">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-06-02_4_44_p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2026-06-02_4_44_p_m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Animatronic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Bonnie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Nights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Nights.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/animation/FramePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/animation/FramePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/animation/FrameSequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/animation/FrameSequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fivenightsatfreddys4/animation/LogicFrameSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CleanFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CleanFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,10 +244,10 @@
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "ef0000ff",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;ef0000ff&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3DpUged7IBrxS99QapngiWYZkDs" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -488,7 +491,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780934299035</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="allah akbar">
+      <option name="closed" value="true" />
+      <created>1781020119502</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1781020119503</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +527,8 @@
     <MESSAGE value="backup" />
     <MESSAGE value="can a cheesy guy git commit" />
     <MESSAGE value="adeded stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="adeded stuff" />
+    <MESSAGE value="allah akbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="allah akbar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

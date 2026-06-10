@@ -6,7 +6,7 @@ public abstract class Animatronic {
 
     protected int aggressionLevel;
     public int progress;;
-    public Position currentPos;
+    public Position currentPos = Position.LIVING_ROOM_CENTER;
     protected FrameSequence doorJumpscare;
 
     public void setAggressionLevel(int a){
@@ -31,6 +31,9 @@ public abstract class Animatronic {
         }
         if (Math.random() < aggressionLevel/20.0) {
             this.movementOpportunity();
+        }
+        else {
+            if (aggressionLevel > 0) System.out.println(getClass().getSimpleName() + " did not move at AI " + aggressionLevel);
         }
     }
 
