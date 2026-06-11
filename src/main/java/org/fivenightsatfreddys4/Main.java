@@ -196,13 +196,13 @@ public class Main extends javax.swing.JFrame {
                     if (player.getMoveCooldown() <= 0) {
                         try {
                             if (player.getPos() == Position.CLOSET && !player.isDoorClosed(Position.CLOSET)) {
-                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkClosetEnd/017.png"))));
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkClosetEnd/047.png"))));
                             }
                             else if (player.getPos() == Position.LEFT_DOOR && !player.isDoorClosed(Position.LEFT_DOOR)) {
-                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkLeftEnd/030.png"))));
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkLeftEnd/062.png"))));
                             }
                             else if (player.getPos() == Position.RIGHT_DOOR && !player.isDoorClosed(Position.RIGHT_DOOR)) {
-                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkRightEnd/033.png"))));
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkRightEnd/065.png"))));
                             }
                         }
                         catch (Exception ex) {
