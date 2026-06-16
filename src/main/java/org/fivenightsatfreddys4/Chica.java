@@ -1,10 +1,14 @@
 package org.fivenightsatfreddys4;
 
+import org.fivenightsatfreddys4.animation.FrameSequence;
+
 public class Chica extends Animatronic {
 
 
     public Chica(int chicaAI) {
         super(chicaAI);
+        defaultJumpscare = new FrameSequence("chica/roomJumpscare");
+        specificJumpscare = new FrameSequence("chica/doorJumpscare");
     }
 
     @Override
@@ -16,8 +20,10 @@ public class Chica extends Animatronic {
             currentPos = Position.LIVING_ROOM_RIGHT;
         } else if (currentPos == Position.LIVING_ROOM_RIGHT) {
             currentPos = Math.random() < 0.35 ? Position.RIGHT_HALLWAY: Position.KITCHEN;
+            Audios.softWalk.play();
         } else if (currentPos == Position.KITCHEN) {
             currentPos = Math.random() < 0.8 ? Position.LIVING_ROOM_RIGHT: Position.KITCHEN;
+            Audios.softWalk.play();
         } else if (currentPos == Position.RIGHT_HALLWAY) {
             currentPos = Position.RIGHT_DOOR;
         }
@@ -27,5 +33,10 @@ public class Chica extends Animatronic {
     @Override
     protected boolean isThreat() {
         return currentPos == Position.RIGHT_DOOR;
+    }
+
+    @Override
+    protected boolean doSpecificJumpscare() {
+        return Main.player.getPos() == Position.RIGHT_DOOR;
     }
 }

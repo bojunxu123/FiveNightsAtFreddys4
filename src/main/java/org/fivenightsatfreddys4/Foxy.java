@@ -1,10 +1,14 @@
 package org.fivenightsatfreddys4;
 
+import org.fivenightsatfreddys4.animation.FrameSequence;
+
 public class Foxy extends Animatronic {
 
+    // Creates a new foxy
     public Foxy(int aggressionLevel) {
         super(aggressionLevel);
-
+        defaultJumpscare = new FrameSequence("foxy/jumpscare");
+        killThreshold = 12;
     }
 
 
@@ -18,9 +22,9 @@ public class Foxy extends Animatronic {
         } else if (currentPos == Position.LIVING_ROOM_CENTER) {
             currentPos = Math.random() < 0.5 ? Position.LIVING_ROOM_LEFT : Position.LIVING_ROOM_RIGHT;
         } else if (currentPos == Position.LIVING_ROOM_LEFT) {
-            currentPos = Math.random() < 0.5 ? Position.LEFT_HALLWAY: Position.LIVING_ROOM_CENTER;
+            currentPos = Math.random() < 0.5 ? Position.LEFT_HALLWAY: Position.LIVING_ROOM_RIGHT;
         } else if (currentPos == Position.LIVING_ROOM_RIGHT) {
-            currentPos = Math.random() < 0.5 ? Position.RIGHT_HALLWAY: Position.LIVING_ROOM_RIGHT;
+            currentPos = Math.random() < 0.5 ? Position.RIGHT_HALLWAY: Position.LIVING_ROOM_LEFT;
         } else if (currentPos == Position.LEFT_HALLWAY) {
             currentPos = Position.LEFT_DOOR;
         } else if (currentPos == Position.RIGHT_HALLWAY) {
@@ -30,7 +34,13 @@ public class Foxy extends Animatronic {
         } else if (currentPos == Position.RIGHT_DOOR) {
             currentPos = Position.CLOSET;
         }
-        // if player shuts door on him while he's at the door, set pos to LIVING_ROOM_LEFT on the next interval, return true
+
+        if (currentPos == Position.CLOSET || currentPos == Position.BED) {
+            Audios.foxyEnterCloset.play();
+        }
+        else if (currentPos == Position.LIVING_ROOM_LEFT || currentPos == Position.LIVING_ROOM_RIGHT) {
+            Audios.foxyRun.play();
+        }
     }
 
     @Override

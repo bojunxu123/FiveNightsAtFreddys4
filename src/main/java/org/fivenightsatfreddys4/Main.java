@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package org.fivenightsatfreddys4;
 
 import org.fivenightsatfreddys4.animation.FramePlayer;
@@ -10,6 +6,7 @@ import org.fivenightsatfreddys4.animation.FrameSequences;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.io.IOException;
@@ -17,103 +14,141 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- *
+ *  Our awesome recreation of five nights at freddy's 4, some say the better version
  * @author bojunxu
  */
 public class Main extends javax.swing.JFrame {
 
+    // The time in milliseconds between frames, 41 ~= 24
     public final static int renderInterval = 41;
 
+    // The label used to displays the images on the screen
     private static JLabel screen;
 
-    public final static Timer timer = new Timer();
+    // The timer used for scheduling things during a night
+    public static Timer timer = new Timer();
 
+    // The timer used only for rendering
     private final static Timer renderTimer = new Timer();
 
+    // The player
     public static Player player;
 
+    // Bonnie
     public static Bonnie bonnie;
 
+    // Chica
     public static Chica chica;
 
+    // Freddy
     public static Freddy freddy;
 
+    // Foxy
     public static Foxy foxy;
 
+    // Fredbear
     public static Fredbear fredbear;
 
-    public static int hour = -1;
+    // The current ingame hour
+    public static int hour = 0;
 
-    private JButton newGame;
+    // The night buttons
+    private static JButton[] nightButtons = new JButton[5];
 
-    private JButton leftDoor;
+    // The left door clickbox
+    private static JButton leftDoor;
 
-    private JButton rightDoor;
+    // The right door clickbox
+    private static JButton rightDoor;
 
-    private JButton center;
+    // The centre clickbox
+    private static JButton center;
 
-    private JButton lower;
+    // The low clickbox
+    private static JButton lower;
 
-    private boolean inNight = false;
-
+    // The map icon for Bonnie
     static private JPanel bonnieSquare;
 
+    // The map icon for Fxoxy
     static private JPanel foxySquare;
 
+    // The map icon for Chica
     static private JPanel chicaSquare;
 
+    // The map icon for Fredbear
     private static JPanel fredbearSquare;
 
+    // The label that tells the player the current time
+    public static JLabel amLabel;
 
+    // The creation of the jFrame
     public Main() throws IOException {
         initComponents();
         setResizable(false);
     }
 
-    @SuppressWarnings("unchecked")
+    /*
+    * inits the components
+     */
     private void initComponents() throws IOException {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1024, 768));
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new Dimension(1024, 768));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/000.png")));
+        // Creates the objects used to display the screen.
+        ImageIcon viewport = new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/00.png")));
         screen = new JLabel(viewport);
         FramePlayer.link(screen);
         this.setContentPane(screen);
 
+        // PLays the opening warning
         FrameSequences.introWarning.play();
         timer.schedule(showButtons,FrameSequences.introWarning.getLength());
 
-        newGame = new JButton("New Game", new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/003.png"))));
-        newGame.setBounds(433,360,168,22);
-        newGame.setVisible(false);
-        newGame.setContentAreaFilled(false);
-        newGame.setFocusPainted(false);
-        newGame.setOpaque(false);
-        newGame.setBorderPainted(false);
-        newGame.addActionListener(e -> {
-            Nights.loadNight(1);
-            System.out.println("loading night sir");
-            newGame.setVisible(false);
-            lower.setVisible(true);
-            center.setVisible(true);
-            rightDoor.setVisible(true);
-            leftDoor.setVisible(true);
-            inNight = true;
-        });
-        getContentPane().add(newGame);
+        // Creates all the night buttons
+        for (int i = 0; i < 5; i++) {
+            JButton button = new JButton("Night " + (i+1));
+            button.setName(i+1 + "");
+            button.setFont(new Font("Times New Roman",Font.BOLD,22));
+            button.setForeground(new Color(255 - i * 50,10,0));
+            nightButtons[i] = button;
+            button.setBounds(433,360 + i * 45,168,30);
+            button.setVisible(false);
+            button.setContentAreaFilled(false);
+            button.setFocusPainted(false);
+            button.setOpaque(false);
+            button.setBorderPainted(false);
+            // Add an event on click to start the corresponding night
+            button.addActionListener(e -> {
+                hour = 0;
+                Nights.loadNight(Integer.parseInt(((JButton)e.getSource()).getText().split(" ")[1]));
+                System.out.println("loading night sir");
+                lower.setVisible(true);
+                amLabel.setVisible(true);
+                amLabel.setText("12 am");
+                center.setVisible(true);
+                rightDoor.setVisible(true);
+                leftDoor.setVisible(true);
+                for (JButton b : nightButtons) {
+                    b.setVisible(false);
+                }
+            });
+            getContentPane().add(button);
+        }
 
+        // Creates the left door clickbox
         leftDoor = new JButton();
         leftDoor.setBounds(0,0,256,768);
         leftDoor.setContentAreaFilled(false);
@@ -136,6 +171,7 @@ public class Main extends javax.swing.JFrame {
         });
         getContentPane().add(leftDoor);
 
+        // Creates the right door clickbox
         rightDoor = new JButton();
         rightDoor.setBounds(768,0,256,768);
         rightDoor.setContentAreaFilled(false);
@@ -158,6 +194,7 @@ public class Main extends javax.swing.JFrame {
         });
         getContentPane().add(rightDoor);
 
+        // Creates the centre clickbox
         center = new JButton();
         center.setBounds(256,0,512,600);
         center.setContentAreaFilled(false);
@@ -165,7 +202,7 @@ public class Main extends javax.swing.JFrame {
         center.setOpaque(false);
         center.setBorderPainted(false);
         center.setVisible(false);
-        center.addMouseListener(new java.awt.event.MouseAdapter() {
+        center.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
                 // Check if BUTTON3 (the right mouse button) was pressed
@@ -179,6 +216,9 @@ public class Main extends javax.swing.JFrame {
                         }
                         else if (player.getPos() == Position.RIGHT_DOOR && !player.isDoorClosed(Position.RIGHT_DOOR)) {
                             FrameSequences.showRightDoor();
+                        }
+                        if (player.getPos() == Position.BED) {
+                            FrameSequences.showBed();
                         }
                     }
                 } else if (e.getButton() == MouseEvent.BUTTON1) {
@@ -196,13 +236,16 @@ public class Main extends javax.swing.JFrame {
                     if (player.getMoveCooldown() <= 0) {
                         try {
                             if (player.getPos() == Position.CLOSET && !player.isDoorClosed(Position.CLOSET)) {
-                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkClosetEnd/047.png"))));
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkClosetEnd/17.png"))));
                             }
                             else if (player.getPos() == Position.LEFT_DOOR && !player.isDoorClosed(Position.LEFT_DOOR)) {
-                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkLeftEnd/062.png"))));
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkLeftEnd/30.png"))));
                             }
                             else if (player.getPos() == Position.RIGHT_DOOR && !player.isDoorClosed(Position.RIGHT_DOOR)) {
-                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkRightEnd/065.png"))));
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkRightEnd/33.png"))));
+                            }
+                            else if (player.getPos() == Position.BED) {
+                                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/checkBed/19.png"))));
                             }
                         }
                         catch (Exception ex) {
@@ -227,6 +270,7 @@ public class Main extends javax.swing.JFrame {
         });
         getContentPane().add(center);
 
+        // Creates the lower clickbox
         lower = new JButton();
         lower.setBounds(256,600,512,168);
         lower.setContentAreaFilled(false);
@@ -274,6 +318,7 @@ public class Main extends javax.swing.JFrame {
 
         }
 
+        // Creates the squares used for the map
         bonnieSquare = new JPanel();
         bonnieSquare.setBackground(new Color(0x575AFF));
 
@@ -284,12 +329,32 @@ public class Main extends javax.swing.JFrame {
         foxySquare.setBackground(new Color(0xFF5626));
 
         fredbearSquare = new JPanel();
-        fredbearSquare.setBackground(new Color(0x7E6800));
+        fredbearSquare.setBackground(new Color(0xD48900));
+
+        bonnieSquare.setBounds(860, 30, 10, 10);
+
+        foxySquare.setBounds(867, 40, 10, 10);
+
+        chicaSquare.setBounds(874, 30, 10, 10);
+
+        fredbearSquare.setBounds(867, 35, 10, 10);
+
 
         getContentPane().add(bonnieSquare);
         getContentPane().add(chicaSquare);
         getContentPane().add(foxySquare);
         getContentPane().add(fredbearSquare);
+
+        // Creates the time display
+        amLabel = new JLabel();
+        amLabel.setBounds(20,10,100,50);
+        amLabel.setText("12 am");
+        amLabel.setFont(new Font("Times New Roman",Font.BOLD,30));
+        amLabel.setForeground(Color.WHITE);
+
+        amLabel.setVisible(false);
+
+        getContentPane().add(amLabel);
 
         pack();
     }
@@ -310,6 +375,7 @@ public class Main extends javax.swing.JFrame {
             public void run() {
                 try {
                     new Main().setVisible(true);
+                    // Creates a task to update all the required display info every render frame
                     TimerTask render = new TimerTask() {
                         @Override
                         public void run() {
@@ -326,11 +392,12 @@ public class Main extends javax.swing.JFrame {
                                     chicaSquare.setBounds(824 + chica.currentPos.getCol() * 50, 30 + chica.currentPos.getRow() * 50, 10, 10);
                                 }
                                 if (fredbear != null && fredbear.aggressionLevel > 0) {
-                                    fredbearSquare.setBounds(817 + fredbear.currentPos.getCol() * 50, 20 + fredbear.currentPos.getRow() * 50, 10, 10);
+                                    fredbearSquare.setBounds(817 + fredbear.currentPos.getCol() * 50, 35 + fredbear.currentPos.getRow() * 50, 10, 10);
                                 }
                             }
                         }
                     };
+                    // adds it to the render timer
                     renderTimer.scheduleAtFixedRate(render,0,renderInterval);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
@@ -340,13 +407,52 @@ public class Main extends javax.swing.JFrame {
 
     }
 
+    // Shows the buttons when the screen is switched to the main menu
     private final TimerTask showButtons = new TimerTask() {
         @Override
         public void run() {
-            newGame.setVisible(true);
+            for (JButton b : nightButtons) {
+                b.setVisible(true);
+            }
             FrameSequences.introWarning = null;
         }
     };
 
+    // Used when the player wins or dies to reset everything and bring them back to the menu
+    public static void endGame() {
+        timer.cancel();
+        timer = new Timer();
+
+        player = null;
+        chica = null;
+        foxy = null;
+        freddy = null;
+        fredbear = null;
+        bonnie = null;
+
+        lower.setVisible(false);
+        center.setVisible(false);
+        rightDoor.setVisible(false);
+        leftDoor.setVisible(false);
+
+        amLabel.setVisible(false);
+
+        timer.schedule(showMenu,FramePlayer.getDuration() * renderInterval + 130);
+    }
+
+    // Shows the menu
+    private static TimerTask showMenu = new TimerTask() {
+        @Override
+        public void run() {
+            for (JButton b : nightButtons) {
+                b.setVisible(true);
+            }
+            try {
+                screen.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/mainMenu/warning/03.png"))));
+            } catch (IOException e) {
+                System.out.println("errpor");
+            }
+        }
+    };
 
 }
